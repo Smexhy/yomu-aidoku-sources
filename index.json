@@ -4,9 +4,9 @@
     {
       "id": "en.atsumaru",
       "name": "Atsumaru",
-      "version": 3,
-      "iconURL": "icons/en.atsumaru-v3.png",
-      "downloadURL": "sources/en.atsumaru-v3.aix",
+      "version": 4,
+      "iconURL": "icons/en.atsumaru-v4.png",
+      "downloadURL": "sources/en.atsumaru-v4.aix",
       "languages": [
         "en"
       ],
@@ -17,9 +17,9 @@
     {
       "id": "en.comix",
       "name": "Comix",
-      "version": 107,
-      "iconURL": "icons/en.comix-v107.png",
-      "downloadURL": "sources/en.comix-v107.aix",
+      "version": 108,
+      "iconURL": "icons/en.comix-v108.png",
+      "downloadURL": "sources/en.comix-v108.aix",
       "languages": [
         "en"
       ],
@@ -30,9 +30,9 @@
     {
       "id": "en.mangadot",
       "name": "MangaDot",
-      "version": 5,
-      "iconURL": "icons/en.mangadot-v5.png",
-      "downloadURL": "sources/en.mangadot-v5.aix",
+      "version": 6,
+      "iconURL": "icons/en.mangadot-v6.png",
+      "downloadURL": "sources/en.mangadot-v6.aix",
       "languages": [
         "en"
       ],
@@ -43,9 +43,9 @@
     {
       "id": "multi.kagane",
       "name": "Kagane",
-      "version": 5,
-      "iconURL": "icons/multi.kagane-v5.png",
-      "downloadURL": "sources/multi.kagane-v5.aix",
+      "version": 6,
+      "iconURL": "icons/multi.kagane-v6.png",
+      "downloadURL": "sources/multi.kagane-v6.aix",
       "languages": [
         "en",
         "ja",
@@ -64,9 +64,9 @@
     {
       "id": "multi.mangaball",
       "name": "Mangaball",
-      "version": 3,
-      "iconURL": "icons/multi.mangaball-v3.png",
-      "downloadURL": "sources/multi.mangaball-v3.aix",
+      "version": 4,
+      "iconURL": "icons/multi.mangaball-v4.png",
+      "downloadURL": "sources/multi.mangaball-v4.aix",
       "languages": [
         "en",
         "es",
@@ -88,9 +88,9 @@
     {
       "id": "multi.onisaga",
       "name": "OniSaga",
-      "version": 1,
-      "iconURL": "icons/multi.onisaga-v1.png",
-      "downloadURL": "sources/multi.onisaga-v1.aix",
+      "version": 2,
+      "iconURL": "icons/multi.onisaga-v2.png",
+      "downloadURL": "sources/multi.onisaga-v2.aix",
       "languages": [
         "en",
         "ja",
