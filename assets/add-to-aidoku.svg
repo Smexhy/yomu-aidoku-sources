@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="56" viewBox="0 0 300 56" role="img" aria-label="Add to Aidoku">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff2e63"/>
+      <stop offset="0.55" stop-color="#ff4d8d"/>
+      <stop offset="1" stop-color="#ff79c6"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="298" height="54" rx="14" fill="url(#bg)"/>
+  <rect x="1" y="1" width="298" height="26" rx="14" fill="url(#sheen)"/>
+  <rect x="1.5" y="1.5" width="297" height="53" rx="13.5" fill="none" stroke="#ffffff" stroke-opacity="0.4"/>
+  <circle cx="37" cy="28" r="13" fill="#ffffff" fill-opacity="0.22"/>
+  <path d="M37 21 v14 M30 28 h14" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round"/>
+  <text x="62" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Add to Aidoku</text>
+</svg>
