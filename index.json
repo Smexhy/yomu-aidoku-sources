@@ -17,9 +17,9 @@
     {
       "id": "en.comix",
       "name": "Comix",
-      "version": 108,
-      "iconURL": "icons/en.comix-v108.png",
-      "downloadURL": "sources/en.comix-v108.aix",
+      "version": 109,
+      "iconURL": "icons/en.comix-v109.png",
+      "downloadURL": "sources/en.comix-v109.aix",
       "languages": [
         "en"
       ],
@@ -30,9 +30,9 @@
     {
       "id": "en.mangadot",
       "name": "MangaDot",
-      "version": 6,
-      "iconURL": "icons/en.mangadot-v6.png",
-      "downloadURL": "sources/en.mangadot-v6.aix",
+      "version": 7,
+      "iconURL": "icons/en.mangadot-v7.png",
+      "downloadURL": "sources/en.mangadot-v7.aix",
       "languages": [
         "en"
       ],
@@ -43,9 +43,9 @@
     {
       "id": "multi.kagane",
       "name": "Kagane",
-      "version": 6,
-      "iconURL": "icons/multi.kagane-v6.png",
-      "downloadURL": "sources/multi.kagane-v6.aix",
+      "version": 7,
+      "iconURL": "icons/multi.kagane-v7.png",
+      "downloadURL": "sources/multi.kagane-v7.aix",
       "languages": [
         "en",
         "ja",
@@ -64,9 +64,9 @@
     {
       "id": "multi.mangaball",
       "name": "Mangaball",
-      "version": 4,
-      "iconURL": "icons/multi.mangaball-v4.png",
-      "downloadURL": "sources/multi.mangaball-v4.aix",
+      "version": 5,
+      "iconURL": "icons/multi.mangaball-v5.png",
+      "downloadURL": "sources/multi.mangaball-v5.aix",
       "languages": [
         "en",
         "es",
@@ -88,9 +88,9 @@
     {
       "id": "multi.onisaga",
       "name": "OniSaga",
-      "version": 2,
-      "iconURL": "icons/multi.onisaga-v2.png",
-      "downloadURL": "sources/multi.onisaga-v2.aix",
+      "version": 3,
+      "iconURL": "icons/multi.onisaga-v3.png",
+      "downloadURL": "sources/multi.onisaga-v3.aix",
       "languages": [
         "en",
         "ja",
