@@ -37,11 +37,20 @@ Prefer a single source over the whole list? Each one below has a one-tap **Add t
 
 <h3><img src="assets/icons/comix.png" width="24" align="top">&nbsp; Comix &nbsp;<sub><a href="https://comix.to">comix.to</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v109.aix">Download .aix (v109)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v110.aix">Download .aix (v110)</a></sub>
 
 Manga and webtoons from comix.to. The home has a Most Recent Popular row up top, then Latest Updates (Hot), Most Followed New Comics, and Recently Added. Search is keyword based, and the genre and tag chips on a series are tappable, while author and artist are available as filters rather than tappable chips. Filters cover author, artist, type, demographic, status, and a long genre list with AND/OR matching, plus the usual sorts. In settings you can set cover quality, merge duplicate chapters, and hide types, demographics, genres or themes; adult content is off by default. Each chapter is tagged with its source, and official releases like Tappytoon get a check so they stand out from scanlations.
 
 The interesting bit is hidden underneath. Comix locks its API behind an obfuscated signing module that it rotates often, and serves its page images with the tiles scrambled. Yomu pulls the current module, signs every request with it, decodes the responses, and lets comix's own renderer work out how each page's tiles are scrambled, then puts them back in order so chapters just open like normal.
+
+> [!IMPORTANT]
+> **Duplicate chapters work differently here, and the first update runs a one time step**
+>
+> Comix often has the same chapter uploaded more than once: a fan release, then an official one, a more complete version, and so on. The usual Comix build, the one in the community list, ties your read history to whichever single upload it currently treats as the best. The catch is that this pick can change later. When a newer or official upload shows up, a chapter you already read pops back into your updates and shows as unread, as if it were new.
+>
+> Yomu's Comix ties your read history to the chapter number instead, so a chapter you read stays read no matter which upload wins later. That is the main difference between this build and the community one. If you would rather keep the old behavior, just use the Comix source from the community list instead of this one.
+>
+> Because the two builds identify chapters in different ways, the first time you update to this version Aidoku runs a one time migration to carry your existing read history across. The migration does its work whenever **Deduplicate Chapters** is on, and this build turns that setting on by default. So on a large library the first update can take a few minutes and may show only a loading spinner with no progress bar, which is normal, so give it time to finish. If you turn the setting off, the update is instant and nothing is fetched. Either way your read progress is kept.
 
 <h3><img src="assets/icons/kagane.png" width="24" align="top">&nbsp; Kagane &nbsp;<sub><a href="https://kagane.to">kagane.to</a></sub></h3>
 
@@ -69,7 +78,7 @@ Its nicest trick is the chapter dedupe. It keeps the best upload of each chapter
 
 <h3><img src="assets/icons/atsumaru.png" width="24" align="top">&nbsp; Atsumaru &nbsp;<sub><a href="https://atsu.moe">atsu.moe</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/atsumaru/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.atsumaru-v4.aix">Download .aix (v4)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/atsumaru/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.atsumaru-v5.aix">Download .aix (v5)</a></sub>
 
 Manga, manhwa and manhua from atsu.moe. The home has Trending, Popular, Top Rated, Recently Updated, Recently Added and Most Bookmarked, with fast search, tappable tag and author chips, and filters for type, status, rating and genre.
 

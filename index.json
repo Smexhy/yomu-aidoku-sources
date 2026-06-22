@@ -4,9 +4,9 @@
     {
       "id": "en.atsumaru",
       "name": "Atsumaru",
-      "version": 4,
-      "iconURL": "icons/en.atsumaru-v4.png",
-      "downloadURL": "sources/en.atsumaru-v4.aix",
+      "version": 5,
+      "iconURL": "icons/en.atsumaru-v5.png",
+      "downloadURL": "sources/en.atsumaru-v5.aix",
       "languages": [
         "en"
       ],
@@ -17,9 +17,9 @@
     {
       "id": "en.comix",
       "name": "Comix",
-      "version": 109,
-      "iconURL": "icons/en.comix-v109.png",
-      "downloadURL": "sources/en.comix-v109.aix",
+      "version": 110,
+      "iconURL": "icons/en.comix-v110.png",
+      "downloadURL": "sources/en.comix-v110.aix",
       "languages": [
         "en"
       ],
