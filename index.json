@@ -30,9 +30,9 @@
     {
       "id": "en.mangadot",
       "name": "MangaDot",
-      "version": 7,
-      "iconURL": "icons/en.mangadot-v7.png",
-      "downloadURL": "sources/en.mangadot-v7.aix",
+      "version": 8,
+      "iconURL": "icons/en.mangadot-v8.png",
+      "downloadURL": "sources/en.mangadot-v8.aix",
       "languages": [
         "en"
       ],
@@ -64,9 +64,9 @@
     {
       "id": "multi.mangaball",
       "name": "Mangaball",
-      "version": 5,
-      "iconURL": "icons/multi.mangaball-v5.png",
-      "downloadURL": "sources/multi.mangaball-v5.aix",
+      "version": 6,
+      "iconURL": "icons/multi.mangaball-v6.png",
+      "downloadURL": "sources/multi.mangaball-v6.aix",
       "languages": [
         "en",
         "es",
@@ -88,9 +88,9 @@
     {
       "id": "multi.onisaga",
       "name": "OniSaga",
-      "version": 3,
-      "iconURL": "icons/multi.onisaga-v3.png",
-      "downloadURL": "sources/multi.onisaga-v3.aix",
+      "version": 4,
+      "iconURL": "icons/multi.onisaga-v4.png",
+      "downloadURL": "sources/multi.onisaga-v4.aix",
       "languages": [
         "en",
         "ja",

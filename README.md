@@ -62,7 +62,7 @@ Reading a chapter needs a signed token that the site only hands out for a short 
 
 <h3><img src="assets/icons/mangaball.png" width="24" align="top">&nbsp; Mangaball &nbsp;<sub><a href="https://mangaball.net">mangaball.net</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangaball/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.mangaball-v5.aix">Download .aix (v5)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangaball/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.mangaball-v6.aix">Download .aix (v6)</a></sub>
 
 Multi language manga, manhwa and manhua from mangaball.net, twelve chapter languages with English by default. The home has Featured, Latest, Recommended and Popular This Season, with search, tappable tag and author chips, and filters for original language, demographic, status and tags.
 
@@ -70,7 +70,7 @@ The site is session based, so Yomu does a quick handshake before loading anythin
 
 <h3><img src="assets/icons/mangadot.png" width="24" align="top">&nbsp; MangaDot &nbsp;<sub><a href="https://mangadot.net">mangadot.net</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangadot/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.mangadot-v7.aix">Download .aix (v7)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangadot/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.mangadot-v8.aix">Download .aix (v8)</a></sub>
 
 Manga, manhwa and manhua from mangadot.net. The home has Most Viewed, Latest Updates, Top Rated and Most Tracked, with title search and filters for type, status and genre. The genre, author and artist chips on a series are tappable, so a tap jumps straight to matching titles.
 
@@ -86,7 +86,7 @@ Its search runs on a Typesense backend, and an author tap uses the site's dedica
 
 <h3><img src="assets/icons/onisaga.png" width="24" align="top">&nbsp; OniSaga &nbsp;<sub><a href="https://onisaga.com">onisaga.com</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/onisaga/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.onisaga-v3.aix">Download .aix (v3)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/onisaga/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.onisaga-v4.aix">Download .aix (v4)</a></sub>
 
 Multi language manga, manhwa and manhua from onisaga.com, eighteen chapter languages with English by default (set in Aidoku's language picker). The home leads with an auto scrolling Most Popular slider, then Latest Mangas, Top Rated and Fan Favorites. Search is title based, the genre and author chips on a series are tappable, and filters cover type, status, minimum rating, sort, and a full genre list you can include or exclude. In settings you can hide genres and merge duplicate chapter uploads; adult content is off by default.
 
@@ -109,6 +109,9 @@ The site runs on Livewire behind Cloudflare, so Yomu talks to it the same way th
 ## Updates
 
 Pull to refresh your source lists in Aidoku to pick up new versions. I update these when the sites change or something breaks, in my free time, so there is no schedule. Everything here is built and tested against the latest Aidoku app and SDK.
+
+> [!NOTE]
+> The latest **MangaDot**, **Mangaball** and **OniSaga** update changes how duplicate chapter uploads are identified, so a chapter you already read no longer reappears as a new unread one when a different upload becomes the top pick. Because of that change, the first time you update those three, your read progress on them may show as unread once. Nothing is deleted, and it stays put afterward.
 
 ## Using this list
 
