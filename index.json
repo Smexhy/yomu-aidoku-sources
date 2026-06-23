@@ -30,9 +30,9 @@
     {
       "id": "en.mangadot",
       "name": "MangaDot",
-      "version": 9,
-      "iconURL": "icons/en.mangadot-v9.png",
-      "downloadURL": "sources/en.mangadot-v9.aix",
+      "version": 10,
+      "iconURL": "icons/en.mangadot-v10.png",
+      "downloadURL": "sources/en.mangadot-v10.aix",
       "languages": [
         "en"
       ],

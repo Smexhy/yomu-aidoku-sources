@@ -75,9 +75,9 @@ The site is session based, so Yomu does a quick handshake before loading anythin
 
 <h3><img src="assets/icons/mangadot.png" width="24" align="top">&nbsp; MangaDot &nbsp;<sub><a href="https://mangadot.net">mangadot.net</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangadot/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.mangadot-v9.aix">Download .aix (v9)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangadot/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.mangadot-v10.aix">Download .aix (v10)</a></sub>
 
-Manga, manhwa and manhua from mangadot.net. The home has Most Viewed, Latest Updates, Top Rated and Most Tracked, with title search and filters for type, status and genre. The genre, author and artist chips on a series are tappable, so a tap jumps straight to matching titles.
+Manga, manhwa and manhua from mangadot.net. The home has Most Viewed, Latest Updates, Top Rated and Most Tracked, with title search and filters for type, status and a genre list kept in sync with the site. The genre, author and artist chips on a series are tappable, so a tap jumps straight to matching titles.
 
 Its nicest trick is the chapter dedupe. It keeps the best upload of each chapter and spots official releases even when the site does not flag them, by recognizing platforms like TappyToon, Tapas and WEBTOON by name. Each chapter is tagged with its source, and the official ones get a check so they stand out from scanlations.
 
