@@ -54,7 +54,7 @@ The interesting bit is hidden underneath. Comix locks its API behind an obfuscat
 
 <h3><img src="assets/icons/kagane.png" width="24" align="top">&nbsp; Kagane &nbsp;<sub><a href="https://kagane.to">kagane.to</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.kagane-v8.aix">Download .aix (v8)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.kagane-v9.aix">Download .aix (v9)</a></sub>
 
 Multi language manhwa, manga and manhua from kagane.to (mostly manhwa), nine chapter languages with English as the default (set in Aidoku's language picker). Popular, latest and newly added on the home, plus listings for popular today through all time. Filters for format, status, content rating and source type, plus a setting for the time window the Popular row uses. In settings you can also hide formats, genres, and certain content tags; adult content is off by default. Each chapter shows its real upload source, like Tapas or Omega Scans, with a check on the official ones so you can tell licensed releases from scanlations at a glance, and an optional setting can add that source to the title too.
 
