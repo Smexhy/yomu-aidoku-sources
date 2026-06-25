@@ -1,0 +1,54 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Repaint the Cayman page header in the Yomu brand gradient (pink to purple) so it
+// matches the banner and badges instead of the theme's default blue and green.
+.page-header {
+  background-image: linear-gradient(120deg, #ff3b69 0%, #7c5cff 100%);
+}
+
+// Make <details> read as clickable on the Pages site. Cayman renders <summary> as
+// display:block and drops the disclosure triangle github shows, so the summary
+// works (it toggles) but looks static. Add our own rotating marker + pointer cursor.
+details > summary {
+  cursor: pointer;
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details > summary::before {
+  content: "\25B8\00a0"; // closed triangle + non-breaking space
+}
+details[open] > summary::before {
+  content: "\25BE\00a0"; // open triangle
+}
+
+// Yomu mark to the left of the title in the page header. Scales with the title
+// font-size (1em) so it stays proportional on mobile; subtle shadow lifts the
+// squircle off the gradient header so it doesn't blend in.
+.project-name::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.35em;
+  vertical-align: -0.12em;
+  background: url("/yomu-aidoku-sources/assets/favicon.svg") no-repeat center / contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.22));
+}
+
+// Safari otherwise lets you drag-select (and long-press "copy") the text baked into
+// the SVG button + banners, treating the art as a text block. They're art/controls,
+// not copy targets, so mark images and any inline SVG text unselectable. Real page
+// text (title, prose, the manual URL) is untouched.
+img,
+svg,
+svg text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
