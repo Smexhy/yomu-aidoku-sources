@@ -67,6 +67,8 @@ Reading a chapter needs a short-lived signed token, so Yomu grabs one and reuses
 
 > 💡 **If a chapter goes black or the app closes partway through:** a few Kagane series use very large page images. On those the reader can run out of memory. Turn on **Downsample Images** in Aidoku's reader settings and it shrinks each page to fit your screen as it loads. This is an Aidoku setting, not something a source can do. The images really are that big.
 
+> ⚠️ **Downloaded chapters may be missing pages or fail to open.** Aidoku currently doesn't read back Kagane's page image format from downloads correctly, so a downloaded chapter can come up empty or skip some pages. Reading online is unaffected. This is an Aidoku app bug, nothing the source can fix, tracked here: [Aidoku#1008](https://github.com/Aidoku/Aidoku/issues/1008).
+
 <h3><img src="assets/icons/mangaball.png" width="24" align="top">&nbsp; Mangaball &nbsp;<sub><a href="https://mangaball.net">mangaball.net</a></sub></h3>
 
 <sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangaball/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.mangaball-v8.aix">Download .aix (v8)</a></sub>
