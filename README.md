@@ -44,7 +44,7 @@ Want just one instead of the whole list? Each source below has a one-tap **Add t
 
 <h3><img src="assets/icons/comix.png" width="24" align="top">&nbsp; Comix &nbsp;<sub><a href="https://comix.to">comix.to</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v112.aix">Download .aix (v112)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v113.aix">Download .aix (v113)</a></sub>
 
 Manga and webtoons from comix.to. Home leads with Most Recent Popular, then Latest Updates, Most Followed New Comics and Recently Added. Filters cover type, demographic, format, status and a long genre list with AND/OR matching. Each chapter is tagged with its real source, and official releases like Tappytoon get a check so licensed uploads stand apart from scanlations.
 
