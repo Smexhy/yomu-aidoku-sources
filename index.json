@@ -43,9 +43,9 @@
     {
       "id": "multi.kagane",
       "name": "Kagane",
-      "version": 10,
-      "iconURL": "icons/multi.kagane-v10.png",
-      "downloadURL": "sources/multi.kagane-v10.aix",
+      "version": 11,
+      "iconURL": "icons/multi.kagane-v11.png",
+      "downloadURL": "sources/multi.kagane-v11.aix",
       "languages": [
         "en",
         "ja",

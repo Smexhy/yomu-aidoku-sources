@@ -59,7 +59,7 @@ Mine shares the same source id with a deliberately high version (<strong>100+</s
 
 <h3><img src="assets/icons/kagane.png" width="24" align="top">&nbsp; Kagane &nbsp;<sub><a href="https://kagane.to">kagane.to</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.kagane-v10.aix">Download .aix (v10)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.kagane-v11.aix">Download .aix (v11)</a></sub>
 
 Multi-language manhwa, manga and manhua from kagane.to, mostly manhwa, nine chapter languages with English by default. Each chapter shows its real upload source, like Tapas or Omega Scans, with a check on the official ones, and an optional setting can add that source to the title to tell duplicate titles apart.
 
