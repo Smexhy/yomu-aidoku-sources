@@ -44,7 +44,7 @@ Want just one instead of the whole list? Each source below has a one-tap **Add t
 
 <h3><img src="assets/icons/comix.png" width="24" align="top">&nbsp; Comix &nbsp;<sub><a href="https://comix.to">comix.to</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v113.aix">Download .aix (v113)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v114.aix">Download .aix (v114)</a></sub>
 
 Manga and webtoons from comix.to. Home leads with Most Recent Popular, then Latest Updates, Most Followed New Comics and Recently Added. Filters cover type, demographic, format, status and a long genre list with AND/OR matching. Each chapter is tagged with its real source, and official releases like Tappytoon get a check so licensed uploads stand apart from scanlations.
 
@@ -59,7 +59,7 @@ Mine shares the same source id with a deliberately high version (<strong>100+</s
 
 <h3><img src="assets/icons/kagane.png" width="24" align="top">&nbsp; Kagane &nbsp;<sub><a href="https://kagane.to">kagane.to</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.kagane-v11.aix">Download .aix (v11)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.kagane-v12.aix">Download .aix (v12)</a></sub>
 
 Multi-language manhwa, manga and manhua from kagane.to, mostly manhwa, nine chapter languages with English by default. Each chapter shows its real upload source, like Tapas or Omega Scans, with a check on the official ones, and an optional setting can add that source to the title to tell duplicate titles apart.
 
@@ -77,21 +77,21 @@ Multi-language manga, manhwa and manhua from mangaball.net, twelve chapter langu
 
 <h3><img src="assets/icons/mangadot.png" width="24" align="top">&nbsp; MangaDot &nbsp;<sub><a href="https://mangadot.net">mangadot.net</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangadot/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.mangadot-v11.aix">Download .aix (v11)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangadot/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.mangadot-v12.aix">Download .aix (v12)</a></sub>
 
 Manga, manhwa and manhua from mangadot.net. Home has Most Viewed, Latest Updates, Top Rated and Most Tracked, with title search and tappable genre, author and artist chips. Its nicest trick is the dedupe: it keeps the best upload of each chapter and spots official releases even when the site does not flag them, by recognizing platforms like Tappytoon, Tapas and WEBTOON by name, then marks them with a check.
 
 <h3><img src="assets/icons/atsumaru.png" width="24" align="top">&nbsp; Atsumaru &nbsp;<sub><a href="https://atsu.moe">atsu.moe</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/atsumaru/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.atsumaru-v7.aix">Download .aix (v7)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/atsumaru/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.atsumaru-v8.aix">Download .aix (v8)</a></sub>
 
 Manga, manhwa and manhua from atsu.moe. Home has Trending, Popular, Top Rated, Recently Updated, Recently Added and Most Bookmarked, with fast search and tappable tag and author chips. Search runs on a Typesense backend, an author tap uses the site's dedicated author endpoint instead of a fuzzy text match, and a title pulls its details and chapter list together so it opens a bit quicker.
 
 <h3><img src="assets/icons/onisaga.png" width="24" align="top">&nbsp; OniSaga &nbsp;<sub><a href="https://onisaga.com">onisaga.com</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/onisaga/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.onisaga-v6.aix">Download .aix (v6)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/onisaga/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.onisaga-v7.aix">Download .aix (v7)</a></sub>
 
-Multi-language manga, manhwa and manhua from onisaga.com, eighteen chapter languages with English by default. Home leads with an auto-scrolling Most Popular slider, then Latest Mangas, Top Rated and Fan Favorites, with tappable genre and author chips and a full genre filter you can include or exclude. The site runs on Livewire behind Cloudflare, and a long chapter list, even hundreds across many languages, loads in a single request instead of paging batch by batch, so the biggest series open quickly.
+Multi-language manga, manhwa and manhua from onisaga.com, eighteen chapter languages with English by default. Home leads with an auto-scrolling Most Popular slider, then Latest Mangas, Top Rated and Fan Favorites, with tappable genre and author chips and a full genre filter you can include or exclude. The site runs on Livewire behind Cloudflare, and a long chapter list, even hundreds across many languages, loads in a single request instead of paging batch by batch, so the biggest series open quickly. Its search straightens curly quotes, the kind iOS inserts, to the plain ones the site expects, so a title with an apostrophe is found however you type it.
 
 ## If a source gets stuck loading
 
