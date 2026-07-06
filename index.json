@@ -30,9 +30,9 @@
     {
       "id": "en.mangadot",
       "name": "MangaDotNet",
-      "version": 14,
-      "iconURL": "icons/en.mangadot-v14.png",
-      "downloadURL": "sources/en.mangadot-v14.aix",
+      "version": 15,
+      "iconURL": "icons/en.mangadot-v15.png",
+      "downloadURL": "sources/en.mangadot-v15.aix",
       "languages": [
         "en"
       ],
@@ -88,9 +88,9 @@
     {
       "id": "multi.onisaga",
       "name": "OniSaga",
-      "version": 8,
-      "iconURL": "icons/multi.onisaga-v8.png",
-      "downloadURL": "sources/multi.onisaga-v8.aix",
+      "version": 9,
+      "iconURL": "icons/multi.onisaga-v9.png",
+      "downloadURL": "sources/multi.onisaga-v9.aix",
       "languages": [
         "en",
         "ja",
