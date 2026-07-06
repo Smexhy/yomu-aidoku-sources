@@ -44,7 +44,7 @@ Want just one instead of the whole list? Each source below has a one-tap **Add t
 
 <h3><img src="assets/icons/comix.png" width="24" align="top">&nbsp; Comix &nbsp;<sub><a href="https://comix.to">comix.to</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v115.aix">Download .aix (v115)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v116.aix">Download .aix (v116)</a></sub>
 
 Manga and webtoons from comix.to. Home leads with Most Recent Popular, then Latest Updates, Most Followed New Comics and Recently Added. Filters cover type, demographic, format, status and a long genre list with AND/OR matching. Each chapter is tagged with its real source, and official releases like Tappytoon get a check so licensed uploads stand apart from scanlations.
 
@@ -61,7 +61,7 @@ Mine shares the same source id with a deliberately high version (<strong>100+</s
 
 <h3><img src="assets/icons/kagane.png" width="24" align="top">&nbsp; Kagane &nbsp;<sub><a href="https://kagane.to">kagane.to</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.kagane-v13.aix">Download .aix (v13)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.kagane-v14.aix">Download .aix (v14)</a></sub>
 
 Multi-language manhwa, manga and manhua from kagane.to, mostly manhwa, nine chapter languages with English by default. Each chapter shows its real upload source, like Tapas or Omega Scans, with a check on the official ones, and an optional setting can add that source to the title to tell duplicate titles apart.
 

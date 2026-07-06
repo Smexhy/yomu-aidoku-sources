@@ -17,9 +17,9 @@
     {
       "id": "en.comix",
       "name": "Comix",
-      "version": 115,
-      "iconURL": "icons/en.comix-v115.png",
-      "downloadURL": "sources/en.comix-v115.aix",
+      "version": 116,
+      "iconURL": "icons/en.comix-v116.png",
+      "downloadURL": "sources/en.comix-v116.aix",
       "languages": [
         "en"
       ],
@@ -43,9 +43,9 @@
     {
       "id": "multi.kagane",
       "name": "Kagane",
-      "version": 13,
-      "iconURL": "icons/multi.kagane-v13.png",
-      "downloadURL": "sources/multi.kagane-v13.aix",
+      "version": 14,
+      "iconURL": "icons/multi.kagane-v14.png",
+      "downloadURL": "sources/multi.kagane-v14.aix",
       "languages": [
         "en",
         "ja",
