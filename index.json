@@ -29,10 +29,10 @@
     },
     {
       "id": "en.mangadot",
-      "name": "MangaDot",
-      "version": 13,
-      "iconURL": "icons/en.mangadot-v13.png",
-      "downloadURL": "sources/en.mangadot-v13.aix",
+      "name": "MangaDotNet",
+      "version": 14,
+      "iconURL": "icons/en.mangadot-v14.png",
+      "downloadURL": "sources/en.mangadot-v14.aix",
       "languages": [
         "en"
       ],

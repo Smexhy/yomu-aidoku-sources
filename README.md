@@ -23,7 +23,7 @@ On iPhone or iPad, tap the button and Aidoku adds the list for you. To add it by
 
 [Aidoku](https://aidoku.app) is a free, open-source manga reader for iOS and iPadOS. Yomu is my own source list for it, six sources I built for my own reading and keep here so anyone else can use them too. It is not the official Aidoku community list and is not trying to replace it. I just maintain my own builds and update them when the sites change or something breaks.
 
-Comix, MangaDot and Atsumaru read in English. Kagane, Mangaball and OniSaga carry several chapter languages, English by default, set in each source's settings.
+Comix, MangaDotNet and Atsumaru read in English. Kagane, Mangaball and OniSaga carry several chapter languages, English by default, set in each source's settings.
 
 ## What every source shares
 
@@ -50,6 +50,8 @@ Manga and webtoons from comix.to. Home leads with Most Recent Popular, then Late
 
 The clever part is underneath. Comix locks its API behind an obfuscated signing module it rotates often, and serves page images with the tiles scrambled. Yomu pulls the current module, signs every request with it, and lets comix's own renderer work out each page's tile order and puts them back, so chapters just open like normal.
 
+> 💡 **Comix needs Aidoku 0.8.4 or newer.** The descrambler relies on the async page scripting the app added in 0.8.4, so on an older Aidoku the source will not load. Update the app if Comix stays blank. The other five sources run on Aidoku 0.8.3 and up.
+
 <details>
 <summary><strong>Already use Comix from the community list?</strong> (read before adding)</summary>
 
@@ -75,9 +77,9 @@ Reading a chapter needs a short-lived signed token, so Yomu grabs one and reuses
 
 Multi-language manga, manhwa and manhua from mangaball.net, twelve chapter languages with English by default. Home has Featured, Latest Updates, Recommended and Popular This Season, with tappable tag and author chips and separate genre and tag filters. The site is session-based, so Yomu does a quick handshake first, and if you paste a title with curly quotes it straightens them to the plain ones the site's search expects.
 
-<h3><img src="assets/icons/mangadot.png" width="24" align="top">&nbsp; MangaDot &nbsp;<sub><a href="https://mangadot.net">mangadot.net</a></sub></h3>
+<h3><img src="assets/icons/mangadot.png" width="24" align="top">&nbsp; MangaDotNet &nbsp;<sub><a href="https://mangadot.net">mangadot.net</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangadot/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.mangadot-v13.aix">Download .aix (v13)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangadot/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.mangadot-v14.aix">Download .aix (v14)</a></sub>
 
 Manga, manhwa and manhua from mangadot.net. Home has Most Viewed, Latest Updates, Top Rated and Most Tracked, with title search and tappable genre, author and artist chips. Its nicest trick is the dedupe: it keeps the best upload of each chapter and spots official releases even when the site does not flag them, by recognizing platforms like Tappytoon, Tapas and WEBTOON by name, then marks them with a check.
 
