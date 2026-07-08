@@ -21,21 +21,21 @@ On iPhone or iPad, tap the button and Aidoku adds the list for you. To add it by
 
 ---
 
-[Aidoku](https://aidoku.app) is a free, open-source manga reader for iOS and iPadOS. Yomu is my own source list for it, six sources I built for my own reading and keep here so anyone else can use them too. It is not the official Aidoku community list and is not trying to replace it. I just maintain my own builds and update them when the sites change or something breaks.
+[Aidoku](https://aidoku.app) is a free, open-source manga reader for iOS and iPadOS. Yomu is my own source list for it: six sources I build and maintain for my own reading, kept here so anyone can use them too. It is not the official Aidoku community list and is not trying to replace it. I update them when the sites change or something breaks.
 
 Comix, MangaDotNet and Atsumaru read in English. Kagane, Mangaball and OniSaga carry several chapter languages, English by default, set in each source's settings.
 
 ## What every source shares
 
-Every source here is built on the same foundations, so you get the same experience whichever one you open.
+These are common to every source here.
 
 <table>
-<tr><td width="200">🧩 <strong>Live filters</strong></td><td>Genres load live from every site, with tags and demographics where the site offers them, so the filter lists stay current on their own without waiting for a source update.</td></tr>
-<tr><td>🙈 <strong>Real content hiding</strong></td><td>Hide genres, tags, formats or demographics in settings and they disappear from the home, listings <em>and</em> search, not just the filter sheet. Adult content is off by default.</td></tr>
-<tr><td>🎯 <strong>Smart dedupe, no fake updates</strong></td><td>Where a site serves duplicate chapter uploads, the source keeps the best one. Read history is keyed to the chapter, not the upload, so a chapter you read stays read and reordering never fires false "new chapter" notifications.</td></tr>
-<tr><td>⚡ <strong>Built to be fast</strong></td><td>Filter data is cached and, on most sources, kept across app launches, network calls are batched into single round trips, and covers start loading before anything else, so browsing stays quick and light.</td></tr>
-<tr><td>🛡️ <strong>Cloudflare handled</strong></td><td>The sites behind Cloudflare ride Aidoku's native handling, with a clear message and a quick fix if a check ever gets stuck.</td></tr>
-<tr><td>🔗 <strong>Tappable chips and deep links</strong></td><td>Genre and tag chips, and author chips on most sources, jump straight to matching titles, and pasted chapter or series links open the right page.</td></tr>
+<tr><td width="200">🧩 <strong>Live filters</strong></td><td>Genres load from each site directly, with tags and demographics where the site offers them, so the filter lists stay current without waiting for a source update.</td></tr>
+<tr><td>🙈 <strong>Content hiding</strong></td><td>Hide genres, tags, formats or demographics in settings and they are removed from the home, listings and search, not only the filter sheet. Adult content is off by default.</td></tr>
+<tr><td>🎯 <strong>Chapter deduplication</strong></td><td>Where a site serves duplicate uploads of a chapter, the source keeps one. Read history is keyed to the chapter rather than the upload, so a chapter you read stays read and reordering does not trigger false new-chapter notifications.</td></tr>
+<tr><td>⚡ <strong>Caching and batching</strong></td><td>Filter data is cached and, on most sources, kept across app launches. Requests are batched, and covers load first.</td></tr>
+<tr><td>🛡️ <strong>Cloudflare handling</strong></td><td>The sites behind Cloudflare use Aidoku's native handling, with a clear message and a fix if a check gets stuck.</td></tr>
+<tr><td>🔗 <strong>Chips and deep links</strong></td><td>Genre and tag chips, and author chips on most sources, open matching titles, and a pasted chapter or series link opens the right page.</td></tr>
 </table>
 
 ## Sources
@@ -44,11 +44,17 @@ Want just one instead of the whole list? Each source below has a one-tap **Add t
 
 <h3><img src="assets/icons/comix.png" width="24" align="top">&nbsp; Comix &nbsp;<sub><a href="https://comix.to">comix.to</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v116.aix">Download .aix (v116)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v117.aix">Download .aix (v117)</a></sub>
 
-Manga and webtoons from comix.to. Home leads with Most Recent Popular, then Latest Updates, Most Followed New Comics and Recently Added. Filters cover type, demographic, format, status and a long genre list with AND/OR matching. Each chapter is tagged with its real source, and official releases like Tappytoon get a check so licensed uploads stand apart from scanlations.
+English manga and webtoons from comix.to. Home has Most Recent Popular, Latest Updates, Most Followed New Comics and Recently Added.
 
-The clever part is underneath. Comix locks its API behind an obfuscated signing module it rotates often, and serves page images with the tiles scrambled. Yomu pulls the current module, signs every request with it, and lets comix's own renderer work out each page's tile order and puts them back, so chapters just open like normal.
+- **Scrambled pages.** Comix signs its API with an obfuscated module it rotates often, and serves page images with the tiles scrambled. Yomu fetches the current module, signs each request, and uses comix's own renderer to put the tiles back, so chapters open normally.
+- **Bad page images.** When the site's server returns a page with corrupt data that would otherwise show blank, Yomu detects it and refetches a clean copy so the page still loads.
+- **Chapter sources.** Each chapter shows its real source, and licensed platforms like Tappytoon are marked with a check.
+- **Chapter deduplication.** On by default. It keeps one upload per chapter (official first, then most votes, then newest), and read history is keyed to the chapter number so progress stays whichever upload wins.
+- **Content rating.** A four-level setting (Safe, Suggestive, Erotica, Pornographic) decides what shows across home, listings and search. It defaults to Safe and Suggestive.
+- **Filters.** Genres, demographic, format, type, status, content rating, release year, minimum chapters, author and artist, plus sort. Genres and formats can be included or excluded, with an AND or OR match.
+- **Content hiding.** Hide any type, demographic, genre, format or tag, or type a name under Custom Hidden Tags to hide a tag that is not in the list.
 
 > 💡 **Comix needs Aidoku 0.8.4 or newer.** The descrambler relies on the async page scripting the app added in 0.8.4, so on an older Aidoku the source will not load. Update the app if Comix stays blank. The other five sources run on Aidoku 0.8.3 and up.
 
@@ -61,13 +67,20 @@ Mine shares the same source id with a deliberately high version (<strong>100+</s
 
 <h3><img src="assets/icons/kagane.png" width="24" align="top">&nbsp; Kagane &nbsp;<sub><a href="https://kagane.to">kagane.to</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.kagane-v14.aix">Download .aix (v14)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.kagane-v15.aix">Download .aix (v15)</a></sub>
 
-Multi-language manhwa, manga and manhua from kagane.to, mostly manhwa, nine chapter languages with English by default. Each chapter shows its real upload source, like Tapas or Omega Scans, with a check on the official ones, and an optional setting can add that source to the title to tell duplicate titles apart.
+Manhwa, manga and manhua from kagane.to, mostly manhwa, across more than sixty chapter languages with English by default. Home has Popular, Recently Added and Recently Updated.
 
-Reading a chapter needs a short-lived signed token, so Yomu grabs one and reuses it for about five minutes, and now keeps it across app restarts too, so reopening within that window skips the handshake.
+- **Chapter sources.** Each chapter shows its real upload source, like Tapas or Omega Scans, with a check on official ones. An optional setting adds the source to the title, which helps tell duplicate titles apart.
+- **Upload source setting.** Show all uploads, official only, or scanlations only, across home, listings and search. The per-search Source Type filter can override it.
+- **Content rating.** A four-level setting (Safe, Suggestive, Erotica, Pornographic) decides what shows across home, listings and search.
+- **Filters.** Genres, tags, demographic, type, series status, upload status, content rating, original language, release year, source type, author and sort. Genres and tags can be included or excluded, with an AND or OR match.
+- **Content hiding.** Hide formats, genres, or whole tag categories like Boys Love, Girls Love, Incest and Netorare, or type a name under Custom Hidden Tags, like Love Triangle or Amnesia, to hide any tag.
+- **Spoiler tags.** Genres and tags kagane marks as spoilers are hidden by default, with a switch to show them.
+- **Popular time span.** The Popular list can cover today, this week, this month or all time.
+- **Over sixty languages.** Including Korean, Japanese, Chinese, French, German and Spanish. Set the chapter language in settings.
 
-> 💡 **If a chapter goes black or the app closes partway through:** a few Kagane series use very large page images. On those the reader can run out of memory. Turn on **Downsample Images** in Aidoku's reader settings and it shrinks each page to fit your screen as it loads. This is an Aidoku setting, not something a source can do. The images really are that big.
+> 💡 **If a chapter goes black or the app closes partway through:** a few Kagane series use very large page images, and on those the reader can run out of memory. Turn on **Downsample Images** in Aidoku's reader settings and it shrinks each page to fit your screen as it loads. This is an Aidoku setting, not something a source can do. The images really are that big.
 
 > 💡 **Downloaded chapters now open correctly.** An earlier Aidoku bug silently dropped some of Kagane's downloaded page images, so a downloaded chapter could come up empty or skip pages. It is fixed in **Aidoku 0.8.4**, so update the app if you still see this. Reading online was never affected. ([Aidoku#1008](https://github.com/Aidoku/Aidoku/issues/1008))
 
@@ -75,25 +88,48 @@ Reading a chapter needs a short-lived signed token, so Yomu grabs one and reuses
 
 <sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangaball/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.mangaball-v9.aix">Download .aix (v9)</a></sub>
 
-Multi-language manga, manhwa and manhua from mangaball.net, twelve chapter languages with English by default. Home has Featured, Latest Updates, Recommended and Popular This Season, with tappable tag and author chips and separate genre and tag filters. The site is session-based, so Yomu does a quick handshake first, and if you paste a title with curly quotes it straightens them to the plain ones the site's search expects.
+Manga, manhwa and manhua from mangaball.net, across twelve chapter languages with English by default. Home has Featured, Latest Updates, Recommended and Most Popular.
+
+- **Chapter deduplication.** On by default. It keeps one upload per chapter (official first, then most likes, then most views, then newest).
+- **Filters.** Genres and tags separately, each include or exclude with an AND or OR match, plus demographic, status, type, author and sort.
+- **Content hiding.** Hide types, genres or tags. Adult content is off by default.
+- **Twelve languages.** Including Spanish, French and Portuguese. Set the chapter language in settings.
+- **Search.** Curly quotes from iOS are converted to the plain quotes the site's search expects.
 
 <h3><img src="assets/icons/mangadot.png" width="24" align="top">&nbsp; MangaDotNet &nbsp;<sub><a href="https://mangadot.net">mangadot.net</a></sub></h3>
 
 <sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangadot/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.mangadot-v15.aix">Download .aix (v15)</a></sub>
 
-Manga, manhwa and manhua from mangadot.net. Home has Most Viewed, Latest Updates, Top Rated and Most Tracked, with title search and tappable genre, author and artist chips. Its nicest trick is the dedupe: it keeps the best upload of each chapter and spots official releases even when the site does not flag them, by recognizing platforms like Tappytoon, Tapas and WEBTOON by name, then marks them with a check.
+English manga, manhwa and manhua from mangadot.net. Home has Most Viewed, Latest Updates, Top Rated and Most Tracked.
+
+- **Chapter deduplication and official badge.** Keeps one upload per chapter (official first, then English, then a trusted uploader, then the most complete), and recognizes licensed platforms like Tappytoon, Tapas and WEBTOON by name, marking them with a check even when the site does not flag them.
+- **Filters.** Genres and tags as tap-to-include, tap-again-to-exclude chips, plus type, status, author, artist and sort.
+- **Content hiding.** Hide genres, tags or types, and turn adult content on or off.
+- **Search and links.** Curly quotes from iOS are converted to plain quotes, and a pasted mangadot.net series or chapter link opens the right page.
 
 <h3><img src="assets/icons/atsumaru.png" width="24" align="top">&nbsp; Atsumaru &nbsp;<sub><a href="https://atsu.moe">atsu.moe</a></sub></h3>
 
 <sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/atsumaru/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.atsumaru-v9.aix">Download .aix (v9)</a></sub>
 
-Manga, manhwa and manhua from atsu.moe. Home has Trending, Popular, Top Rated, Recently Updated, Recently Added and Most Bookmarked, with fast search and tappable tag and author chips. Search runs on a Typesense backend, an author tap uses the site's dedicated author endpoint instead of a fuzzy text match, and a title pulls its details and chapter list together so it opens a bit quicker.
+English manga, manhwa and manhua from atsu.moe. Home has Trending, Recently Updated, Popular, Top Rated, Recently Added and Most Bookmarked.
+
+- **Search.** Runs on a Typesense backend, and tapping an author uses the site's author endpoint for an exact match rather than a fuzzy text search.
+- **Chapter deduplication.** On by default. When duplicate chapters are merged, you choose which to keep, the newest upload or the one with the most pages.
+- **Filters.** Genres, tags, demographic, type, status, content rating, release year, author and sort, with genres and tags include or exclude and an AND or OR match.
+- **Content hiding.** Hide types, genres or tags, and turn adult content on or off. Adult ratings stay selectable per search as an explicit opt-in.
 
 <h3><img src="assets/icons/onisaga.png" width="24" align="top">&nbsp; OniSaga &nbsp;<sub><a href="https://onisaga.com">onisaga.com</a></sub></h3>
 
 <sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/onisaga/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.onisaga-v9.aix">Download .aix (v9)</a></sub>
 
-Multi-language manga, manhwa and manhua from onisaga.com, eighteen chapter languages with English by default. Home leads with an auto-scrolling Most Popular slider, then Latest Mangas and Fan Favorites, with tappable genre and author chips and a full genre filter you can include or exclude. The site runs on Livewire behind Cloudflare, and a long chapter list, even hundreds across many languages, loads in a single request instead of paging batch by batch, so the biggest series open quickly. Its search straightens curly quotes, the kind iOS inserts, to the plain ones the site expects, so a title with an apostrophe is found however you type it.
+Manga, manhwa and manhua from onisaga.com, across eighteen chapter languages with English by default. Home has an auto-scrolling Most Popular slider, then Latest Mangas and Fan Favorites.
+
+- **Big series open faster.** A long chapter list, even hundreds across languages, loads in one request instead of paging through it in batches.
+- **Chapter deduplication.** Keeps one upload per language, and you choose the newest or the one with the most pages.
+- **Filters.** Genres (include or exclude), type, status, release year, minimum rating, minimum chapters, author, scanlation group and sort.
+- **Content hiding.** Hide genres, and turn adult content on or off. A genre you include in a search still shows even if it is on your hidden list.
+- **Eighteen languages.** Including Simplified and Traditional Chinese, Korean and Japanese. Set the chapter language in settings.
+- **Search and chips.** Curly quotes are converted to plain quotes, and genre and author chips are tappable.
 
 ## If a source gets stuck loading
 
