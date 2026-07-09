@@ -88,14 +88,14 @@ Manhwa, manga and manhua from kagane.to, mostly manhwa, across more than sixty c
 
 <h3><img src="assets/icons/mangaball.png" width="24" align="top">&nbsp; Mangaball &nbsp;<sub><a href="https://mangaball.net">mangaball.net</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangaball/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.mangaball-v9.aix">Download .aix (v9)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangaball/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.mangaball-v10.aix">Download .aix (v10)</a></sub>
 
-Manga, manhwa and manhua from mangaball.net, across twelve chapter languages with English by default. Home has Featured, Latest Updates, Recommended and Most Popular.
+Manga, manhwa and manhua from mangaball.net, across more than fifty chapter languages with English by default. Home has Featured, Latest Updates, Recommended and Most Popular.
 
 - **Chapter deduplication.** On by default. It keeps one upload per chapter (official first, then most likes, then most views, then newest).
 - **Filters.** Genres and tags separately, each include or exclude with an AND or OR match, plus demographic, status, type, author and sort.
 - **Content hiding.** Hide types, genres or tags. Adult content is off by default.
-- **Twelve languages.** Including Spanish, French and Portuguese. Set the chapter language in settings.
+- **Over fifty languages.** Including Spanish, Portuguese, Indonesian, Vietnamese and French. Set the chapter language in settings.
 - **Session first.** Mangaball only answers inside a live session, so Yomu opens a page to pick up the session and its token before it can search or load, and refreshes them as they expire after a couple of minutes. That handshake is why Mangaball takes a moment longer to warm up than the plain-API sources.
 
 <h3><img src="assets/icons/mangadot.png" width="24" align="top">&nbsp; MangaDotNet &nbsp;<sub><a href="https://mangadot.net">mangadot.net</a></sub></h3>
