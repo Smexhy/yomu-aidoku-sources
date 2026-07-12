@@ -23,7 +23,7 @@ On iPhone or iPad, tap the button and Aidoku adds the list for you. To add it by
 
 [Aidoku](https://aidoku.app) is a free, open-source manga reader for iOS and iPadOS. Yomu is my own source list for it: six sources I build and maintain for my own reading, kept here so anyone can use them too. It is not the official Aidoku community list and is not trying to replace it. I update them when the sites change or something breaks.
 
-Comix, MangaDotNet and Atsumaru read in English. Kagane, Mangaball and OniSaga carry several chapter languages, English by default, set in each source's settings.
+Comix and Atsumaru read in English. Kagane, Mangaball, MangaDotNet and OniSaga carry several chapter languages, English by default, set in each source's settings.
 
 ## What every source shares
 
@@ -103,11 +103,14 @@ Manga, manhwa and manhua from mangaball.net, across more than fifty chapter lang
 
 <h3><img src="assets/icons/mangadot.png" width="24" align="top">&nbsp; MangaDotNet &nbsp;<sub><a href="https://mangadot.net">mangadot.net</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangadot/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.mangadot-v15.aix">Download .aix (v15)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangadot/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.mangadot-v16.aix">Download .aix (v16)</a></sub>
 
-English manga, manhwa and manhua from mangadot.net. Home has Most Viewed, Latest Updates, Top Rated and Most Tracked.
+Manga, manhwa and manhua from mangadot.net, mostly English with other chapter languages where the site has them, English by default. Home has Most Viewed, Latest Updates, Top Rated and Most Tracked.
 
-- **Chapter deduplication and official badge.** Keeps one upload per chapter (official first, then English, then a trusted uploader, then the most complete), and recognizes licensed platforms like Tappytoon, Tapas and WEBTOON by name, marking them with a check even when the site does not flag them.
+- **Consistent translation groups.** Deduplication keeps your whole series with one translation group from start to finish, so character names and phrasing stay the same as you read. Official releases always come first, and when a series has several official sources it sticks with one of them too. Among fan groups it picks the one that has translated the most of the series, and fills anything that group is missing from the next best one, in whole stretches instead of single chapter jumps. A setting brings back the old per chapter picking. Read history stays tied to the chapter, so nothing you read is lost.
+- **Official badge.** MangaDotNet does not flag official releases itself, so Yomu recognizes licensed platforms and publishers by name, from WEBTOON, Tapas and Tappytoon to Viz, Kodansha, DLsite and dozens more, and marks them with a check.
+- **Your languages.** MangaDotNet can carry the same chapter in more than one language. Pick the ones you read in the source settings, and each language keeps its own consistent group.
+- **Tidy chapter names.** Upload names that only repeat the chapter number are hidden, so a chapter reads as a clean number instead of doubling up, while real chapter titles are kept.
 - **Filters.** Genres and tags as tap-to-include, tap-again-to-exclude chips, plus type, status, author, artist and sort.
 - **Content hiding.** Hide genres, tags or types, and turn adult content on or off.
 - **Straight from the API.** MangaDotNet serves a clean data API. Yomu reads listings, chapters and pages straight from it, with no page scraping and no page-by-page unlocking.
