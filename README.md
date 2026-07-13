@@ -43,14 +43,14 @@ Want just one instead of the whole list? Each source below has a one-tap **Add t
 
 <h3><img src="assets/icons/comix.png" width="24" align="top">&nbsp; Comix &nbsp;<sub><a href="https://comix.to">comix.to</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v120.aix">Download .aix (v120)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v121.aix">Download .aix (v121)</a></sub>
 
 English manga and webtoons from comix.to. Home has Most Recent Popular, Latest Updates, Most Followed New Comics and Recently Added. Two more browse listings, Trending Webtoon and Trending Manga, rank titles by views over the last three months.
 
 - **Scrambled pages.** Comix signs its API with an obfuscated module it rotates often, and serves page images with the tiles scrambled. Yomu fetches the current module, signs each request, and uses Comix's own renderer to put the tiles back, so chapters open normally.
 - **Bad page images.** When the site's server returns a page with corrupt data that would otherwise show blank, Yomu detects it and refetches a clean copy so the page still loads.
 - **Chapter sources.** Each chapter shows its real source, and licensed platforms like Tappytoon are marked with a check.
-- **Consistent translation groups.** Unique to this build. Picking each chapter's most liked upload on its own kept switching translation groups mid series, changing character names and phrasing as you read. Deduplication now keeps your whole series with one group: official releases come first (staying with one official source even when a series has several), everything else comes from the group readers like most, with other groups filling in where yours is missing chapters, in whole stretches instead of single chapter jumps. A series switches groups only when readers clearly prefer another one, and a setting brings back the old per chapter picking. Read history stays tied to the chapter number, so nothing you read is ever lost.
+- **Flexible chapter selection.** Show One Upload Per Chapter is on by default. Prefer One Group tries to use the same scanlation group or official source wherever possible. Official uploads always come first. Official sources and scanlation groups are ranked separately using likes and chapter coverage, and other sources or groups fill gaps when the preferred one has no upload. Best Upload Per Chapter instead chooses every chapter on its own, picking the most liked official upload when available, otherwise the most liked unofficial upload. Read history stays tied to the chapter number.
 - **Tidy chapter names.** Upload names that only repeat the chapter number are hidden; real chapter titles stay.
 - **Content rating.** A four-level setting (Safe, Suggestive, Erotica, Pornographic) decides what shows across home, listings and search. It defaults to Safe and Suggestive.
 - **Filters.** Genres, demographic, format, type, status, content rating, release year, minimum chapters, author and artist, plus sort. Genres and formats can be included or excluded, with an AND or OR match.
@@ -63,9 +63,9 @@ English manga and webtoons from comix.to. Home has Most Recent Popular, Latest U
 
 <p>Mine shares the same source id with a deliberately high version (<strong>100+</strong>), so adding Yomu keeps your existing library and just swaps in my build. You won't lose any saved series or progress.</p>
 
-<p>The main difference is chapter handling. Unlike the community build, <strong>Deduplicate Chapters</strong> is on by default here and keeps one consistent translation group across your series. Comix keeps one upload per chapter out of the box, and read history is tied to the chapter number, so a chapter you read stays read no matter which upload wins a later deduplication pass. The first update runs a one-time migration to carry your existing history across while deduplication is on. On a large library that first open can sit on a plain spinner for a few minutes. That is normal.</p>
+<p>The main difference is chapter handling. Unlike the community build, <strong>Show One Upload Per Chapter</strong> is on by default here. <strong>Prefer One Group</strong> tries to use the same scanlation group or official source wherever possible, while other sources or groups fill any gaps. Read history is tied to the chapter number, so a chapter you read stays read even if a later update chooses a different upload. The first update runs a one-time migration to carry your existing history across while this setting is on. On a large library that first open can sit on a plain spinner for a few minutes. That is normal.</p>
 
-<p>Prefer the old behavior, with no deduplication? Just use the community Comix instead.</p>
+<p>Want to see every upload instead? Turn off <strong>Show One Upload Per Chapter</strong> in the source settings.</p>
 
 </details>
 
