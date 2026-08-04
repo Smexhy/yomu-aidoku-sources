@@ -43,11 +43,13 @@ Want just one instead of the whole list? Each source below has a one-tap **Add t
 
 <h3><img src="assets/icons/comix.png" width="24" align="top">&nbsp; Comix &nbsp;<sub><a href="https://comix.to">comix.to</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v121.aix">Download .aix (v121)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v122.aix">Download .aix (v122)</a></sub>
 
 English manga and webtoons from comix.to. Home has Most Recent Popular, Latest Updates, Most Followed New Comics and Recently Added. Two more browse listings, Trending Webtoon and Trending Manga, rank titles by views over the last three months.
 
 - **Scrambled pages.** Comix signs its API with an obfuscated module it rotates often, and serves page images with the tiles scrambled. Yomu fetches the current module, signs each request, and uses Comix's own renderer to put the tiles back, so chapters open normally.
+- **Blocked requests.** On some devices Cloudflare refuses Aidoku's normal requests to Comix even after you pass its check, which leaves the source unable to load anything. Yomu notices and sends its requests through a web view instead, which still works, and goes back to normal requests on its own once the block lifts. Settings &gt; Connection can pin either mode.
+- **Comix's own captcha.** Comix sometimes puts a captcha in front of the whole site, including the data Yomu reads. Aidoku has no way to show that check by itself, so Settings &gt; Access &gt; Verify Captcha opens it for you. Solve the puzzle and Comix reloads itself. A solve lasts about half an hour, and the button arms itself again once it runs out.
 - **Bad page images.** When the site's server returns a page with corrupt data that would otherwise show blank, Yomu detects it and refetches a clean copy so the page still loads.
 - **Chapter sources.** Each chapter shows its real source, and licensed platforms like Tappytoon are marked with a check.
 - **Flexible chapter selection.** Show One Upload Per Chapter is on by default. Prefer One Group tries to use the same scanlation group or official source wherever possible. Official uploads always come first. Official sources and scanlation groups are ranked separately using likes and chapter coverage, and other sources or groups fill gaps when the preferred one has no upload. Best Upload Per Chapter instead chooses every chapter on its own, picking the most liked official upload when available, otherwise the most liked unofficial upload. Read history stays tied to the chapter number.
@@ -57,6 +59,8 @@ English manga and webtoons from comix.to. Home has Most Recent Popular, Latest U
 - **Content hiding.** Hide any type, demographic, genre, format or tag, or type a name under Custom Hidden Tags to hide a tag that is not in the list.
 
 > 💡 **Comix needs Aidoku 0.8.4 or newer.** The descrambler relies on the async page scripting the app added in 0.8.4, so on an older Aidoku the source will not load. Update the app if Comix stays blank. The other five sources run on Aidoku 0.8.3 and up.
+
+> ⚠️ **Comix asks for a captcha every so often.** This is Comix's own check, not Aidoku's and not Cloudflare's, and it currently gates the whole site. When Comix stops loading, open Settings &gt; Access &gt; Verify Captcha and solve it; a solve lasts about half an hour. There is no way for a source to show that check on its own, so this is as smooth as it gets today. If that is too much friction, the other sources are unaffected.
 
 <details>
 <summary><strong>Already use Comix from the community list?</strong> (read before adding)</summary>
