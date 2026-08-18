@@ -43,7 +43,7 @@ Want just one instead of the whole list? Each source below has a one-tap **Add t
 
 <h3><img src="assets/icons/comix.png" width="24" align="top">&nbsp; Comix &nbsp;<sub><a href="https://comix.to">comix.to</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v122.aix">Download .aix (v122)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/comix/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.comix-v123.aix">Download .aix (v123)</a></sub>
 
 English manga and webtoons from comix.to. Home has Most Recent Popular, Latest Updates, Most Followed New Comics and Recently Added. Two more browse listings, Trending Webtoon and Trending Manga, rank titles by views over the last three months.
 
