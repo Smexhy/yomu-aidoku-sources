@@ -108,7 +108,7 @@ Manga, manhwa and manhua from mangaball.net, across more than fifty chapter lang
 
 <h3><img src="assets/icons/mangadot.png" width="24" align="top">&nbsp; MangaDotNet &nbsp;<sub><a href="https://mangadot.net">mangadot.net</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangadot/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.mangadot-v16.aix">Download .aix (v16)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangadot/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.mangadot-v17.aix">Download .aix (v17)</a></sub>
 
 Manga, manhwa and manhua from mangadot.net, mostly English with other chapter languages where the site has them, English by default. Home has Most Viewed, Latest Updates, Top Rated and Most Tracked.
 
