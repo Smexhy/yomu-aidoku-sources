@@ -75,7 +75,7 @@ English manga and webtoons from comix.to. Home has Most Recent Popular, Latest U
 
 <h3><img src="assets/icons/kagane.png" width="24" align="top">&nbsp; Kagane &nbsp;<sub><a href="https://kagane.to">kagane.to</a></sub></h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.kagane-v19.aix">Download .aix (v19)</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/multi.kagane-v20.aix">Download .aix (v20)</a></sub>
 
 Manhwa, manga and manhua from kagane.to, mostly manhwa, across more than sixty chapter languages with English by default. Home has Popular, Recently Added and Recently Updated.
 
