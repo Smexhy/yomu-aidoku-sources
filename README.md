@@ -31,7 +31,7 @@ Tap the button on iPhone or iPad and Aidoku adds the list. To add it by hand, op
 |---|---|---|---|
 | <img src="assets/icons/comix.png" width="20"> | **Comix** <sub>[comix.to](https://comix.to)</sub> | English | The all-rounder: manga and manhwa together, and the biggest library here |
 | <img src="assets/icons/kagane.png" width="20"> | **Kagane** <sub>[kagane.to](https://kagane.to)</sub> | 60+ languages | Mostly manhwa, with per-upload source badges |
-| <img src="assets/icons/mangaball.png" width="20"> | **Mangaball** <sub>[mangaball.net](https://mangaball.net)</sub> | 50+ languages | Genres and tags as separate include and exclude lists |
+| <img src="assets/icons/mangaball.png" width="20"> | **Mangaball** <sub>[mangaball.net](https://mangaball.net)</sub> | 50+ languages | Wide language coverage |
 | <img src="assets/icons/mangadot.png" width="20"> | **MangaDotNet** <sub>[mangadot.net](https://mangadot.net)</sub> | English + others | One translation group per series, start to finish |
 | <img src="assets/icons/atsumaru.png" width="20"> | **Atsumaru** <sub>[atsu.moe](https://atsu.moe)</sub> | English | The quickest to open, with no handshake to sit through |
 | <img src="assets/icons/onisaga.png" width="20"> | **OniSaga** <sub>[onisaga.com](https://onisaga.com)</sub> | 18 languages | Filtering down to minimum rating, chapter count or scanlation group |
