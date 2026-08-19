@@ -28,6 +28,19 @@
       "minAppVersion": "0.8.4"
     },
     {
+      "id": "en.madaradex",
+      "name": "MadaraDex",
+      "version": 1,
+      "iconURL": "icons/en.madaradex-v1.png",
+      "downloadURL": "sources/en.madaradex-v1.aix",
+      "languages": [
+        "en"
+      ],
+      "contentRating": 2,
+      "baseURL": "https://madaradex.org",
+      "minAppVersion": "0.8.3"
+    },
+    {
       "id": "en.mangadot",
       "name": "MangaDotNet",
       "version": 20,

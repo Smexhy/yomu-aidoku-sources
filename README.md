@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff3b69,100:7c5cff&height=180&section=header&text=%E3%82%88%E3%82%80%20Yomu&fontSize=62&fontColor=ffffff&fontAlignY=36&desc=Manga,%20manhwa%20and%20manhua%20for%20Aidoku&descSize=18&descAlignY=58" alt="Yomu: Manga, manhwa and manhua sources for Aidoku" width="100%">
 
 <img alt="Platform: iOS / iPadOS, Aidoku 0.8.3+" src="https://img.shields.io/badge/iOS%20%2F%20iPadOS-Aidoku%200.8.3%2B-ff3b69?style=for-the-badge">
-<img alt="Sources: 6" src="https://img.shields.io/badge/sources-6-7c5cff?style=for-the-badge">
+<img alt="Sources: 7" src="https://img.shields.io/badge/sources-7-7c5cff?style=for-the-badge">
 
 <img src="assets/spacer.png" width="100%" height="28" alt="">
 
@@ -21,21 +21,23 @@ On iPhone or iPad, tap the button and Aidoku adds the list for you. To add it by
 
 ---
 
-[Aidoku](https://aidoku.app) is a free, open-source manga reader for iOS and iPadOS. Yomu is my own source list for it: six sources I build and maintain for my own reading, kept here so anyone can use them too. It is not the official Aidoku community list and is not trying to replace it. I update them when the sites change or something breaks.
+[Aidoku](https://aidoku.app) is a free, open-source manga reader for iOS and iPadOS. Yomu is my own source list for it: seven sources I build and maintain for my own reading, kept here so anyone can use them too. It is not the official Aidoku community list and is not trying to replace it. I update them when the sites change or something breaks.
 
-Comix and Atsumaru read in English. Kagane, Mangaball, MangaDotNet and OniSaga carry several chapter languages, English by default, set in each source's settings.
+Comix, Atsumaru and MadaraDex read in English. Kagane, Mangaball, MangaDotNet and OniSaga carry several chapter languages, English by default, set in each source's settings.
+
+One of them, **MadaraDex**, is an adult source: every title on it is 18+. It is marked as adult in the list so Aidoku can filter it along with your other content settings.
 
 ## What every source shares
 
 These are common to every source here.
 
 - **Dynamic filters.** The genre list in each source's filter sheet, and the tag list where a source has one, come straight from the site, so they stay complete and update on their own as the site changes, without waiting for a source update.
-- **Content hiding.** Every source can hide genres in settings, and most can hide tags, types, formats or demographics too. Hidden entries disappear from the home page, listings and search, not only the filter sheet. Adult content is off by default.
+- **Content hiding.** Every source except MadaraDex can hide genres in settings, and most can hide tags, types, formats or demographics too. Hidden entries disappear from the home page, listings and search, not only the filter sheet. Adult content is off by default. MadaraDex has no settings of its own: it is a single-language adult source, so there is no mixed content to filter.
 - **Chapter deduplication.** Where a site serves duplicate uploads of a chapter, the source keeps one. Read history is tied to the chapter rather than the upload, so a chapter you read stays read and reordering does not trigger false new-chapter notifications.
 - **Caching and batching.** Filter data is cached and, on most sources, kept across app launches. The app asks the site for several things at once, and covers load first.
 - **Cloudflare handling.** The sites behind Cloudflare go through Aidoku's own Cloudflare check, with a clear message and a fix if a check gets stuck.
 - **Chips and deep links.** Tap a genre chip on a series page to see matching titles; on most sources tag and author chips work the same way. Paste a chapter or series link and the right page opens.
-- **Search.** The curly quotes iOS inserts are swapped for the plain ones each site's search expects, so a title with an apostrophe is found however you type it.
+- **Search.** On the sources whose search is strict about it, the curly quotes iOS inserts are swapped for the plain ones the site expects, so a title with an apostrophe is found however you type it.
 
 ## Sources
 
@@ -143,6 +145,19 @@ Manga, manhwa and manhua from onisaga.com, across eighteen chapter languages wit
 - **Content hiding.** Hide genres, and turn adult content on or off. A genre you include in a search still shows even if it is on your hidden list.
 - **Eighteen languages.** Including Simplified and Traditional Chinese, Korean and Japanese. Set the chapter language in settings.
 - **Page-by-page unlocking.** OniSaga doesn't hand out direct image links. Each page is unlocked through the site's own reader with a rolling token, one at a time, so pages load as you reach them, the same way the site does it.
+
+<h3><img src="assets/icons/madaradex.png" width="24" align="top">&nbsp; MadaraDex &nbsp;<sub><a href="https://madaradex.org">madaradex.org</a></sub>&nbsp; <sub><strong>18+</strong></sub></h3>
+
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/madaradex/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; <a href="https://smexhy.github.io/yomu-aidoku-sources/sources/en.madaradex-v1.aix">Download .aix (v1)</a></sub>
+
+<strong>Adults only.</strong> Every title on madaradex.org is adult manhwa, so unlike the rest of this list there is no safe-for-work side to it. It is marked as an adult source, so Aidoku filters it with your other content settings and it may stay hidden until you allow adult sources.
+
+English adult manhwa from madaradex.org. Home has New Manga and Latest Updates, and there are five browse listings: Most Popular, Latest Updates, Trending, New Series and Top Rated.
+
+- **Pages that load at all.** MadaraDex hands its page images only to a real browser and refuses an app that asks for them directly, which is why a straightforward source for it does not work. Yomu opens each chapter through the site's own reader first so the images become available, then loads them the normal way. You just see a chapter that opens.
+- **The next chapter is already waiting.** While you read, the following chapter is fetched in the background, so tapping through a series is close to instant instead of paying that wait every time.
+- **Filters.** Sort by relevance, latest, A-Z, rating, trending, most views or newest, plus the site's full genre list and a search by author or artist name.
+- **Tappable chips.** Genre, author and artist on a series page each open the matching titles.
 
 ## If a source gets stuck loading
 
