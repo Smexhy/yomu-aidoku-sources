@@ -35,11 +35,9 @@ Tap the button on iPhone or iPad and Aidoku adds the list. To add it by hand, op
 | <img src="assets/icons/mangadot.png" width="20"> | **MangaDotNet** <sub>[mangadot.net](https://mangadot.net)</sub> | English + others | One translation group per series, start to finish |
 | <img src="assets/icons/atsumaru.png" width="20"> | **Atsumaru** <sub>[atsu.moe](https://atsu.moe)</sub> | English | The quickest to load, with public data and direct images |
 | <img src="assets/icons/onisaga.png" width="20"> | **OniSaga** <sub>[onisaga.com](https://onisaga.com)</sub> | 18 languages | Chinese, Korean and Japanese chapters |
-| <img src="assets/icons/madaradex.png" width="20"> | **MadaraDex** <sub>[madaradex.org](https://madaradex.org)</sub> | English | Adult manhwa &nbsp;<strong>18+</strong> |
+| <img src="assets/icons/madaradex.png" width="20"> | **MadaraDex** <img alt="18+" src="https://img.shields.io/badge/18+-ff3b69?style=flat-square" align="top"> <sub>[madaradex.org](https://madaradex.org)</sub> | English | Mostly adult manhwa, with some safe-for-work titles |
 
 Multi-language sources default to English; pick yours in each source's settings.
-
-> ⚠️ **MadaraDex is an adult source.** Every title on it is 18+. It is marked as adult in the list, so Aidoku filters it with your other content settings and it may stay hidden until you allow adult sources.
 
 ## What they all do
 
@@ -49,7 +47,7 @@ Multi-language sources default to English; pick yours in each source's settings.
 - **Covers first.** Requests are batched and cached, and covers load before anything else.
 - **Tappable chips.** Genre chips on a series page open matching titles, and on most sources author and tag chips too. Paste a link and the right page opens.
 
-<sub>MadaraDex is the exception on hiding: it is a single-language adult source with no settings of its own, so there is no mixed content to filter.</sub>
+<sub>MadaraDex is the exception on hiding: it is a single-language source with no settings of its own, and Aidoku rates it adult as a whole.</sub>
 
 ## Install one at a time
 
@@ -184,11 +182,11 @@ Manga, manhwa and manhua. Home opens with an auto-scrolling Most Popular slider,
 
 </details>
 
-<h3><img src="assets/icons/madaradex.png" width="24" align="top">&nbsp; MadaraDex &nbsp;<sub><strong>18+</strong></sub></h3>
+<h3><img src="assets/icons/madaradex.png" width="24" align="top">&nbsp; MadaraDex &nbsp;<img alt="18+" src="https://img.shields.io/badge/18+-ff3b69?style=flat-square" align="top"></h3>
 
 <sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/madaradex/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; English &nbsp;·&nbsp; <a href="https://madaradex.org">madaradex.org</a></sub>
 
-<strong>Adults only.</strong> Every title here is adult manhwa, so unlike the rest of this list there is no safe-for-work side to it.
+<strong>Mostly adult.</strong> The great majority of madaradex.org is adult manhwa, with a smaller number of safe-for-work series alongside it, so the source is rated adult as a whole. Aidoku filters it with your other content settings, which means it can stay hidden until you allow adult sources.
 
 Home has New Manga and Latest Updates, plus five browse listings: Most Popular, Latest Updates, Trending, New Series and Top Rated.
 
@@ -201,7 +199,7 @@ Home has New Manga and Latest Updates, plus five browse listings: Most Popular, 
 
 <p><strong>Pages that load at all.</strong> MadaraDex serves its page images only to a real browser and refuses an app asking for them directly, which is why a straightforward source for it does not work. Yomu opens each chapter through the site's own reader first so the images become available, then loads them normally. From your side it is just a chapter that opens.</p>
 
-<p><strong>No settings of its own.</strong> It is single-language and entirely adult, so there is no mixed content to filter and nothing to configure.</p>
+<p><strong>No settings of its own.</strong> It is single-language and rated adult as a whole, so there is nothing to configure.</p>
 
 </details>
 
