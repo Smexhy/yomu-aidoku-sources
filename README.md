@@ -205,15 +205,21 @@ Home has New Manga and Latest Updates, plus five browse listings: Most Popular, 
 
 ## If a source gets stuck loading
 
-> ⚠️ Most of these sites sit behind Cloudflare. The first time you open one in a session, its check can add a few seconds before covers appear. That is normal.
->
-> A Cloudflare source can also get fully **stuck** on a spinner or a verification window that never finishes. If that happens:
->
-> 1. Open **Browse**, tap the source, then the **three dots → Settings**.
-> 2. Scroll down and tap **Clear Cache**.
-> 3. **Force close Aidoku** (swipe it away) and open it again.
->
-> That drops the stale Cloudflare cookie and it loads again. It is an Aidoku and Cloudflare quirk, not something a source can fix on its own.
+> 💡 **Keep Aidoku on the latest version.** Almost everything that shows up as a 403, an
+> endless spinner or a verification window that never finishes is Cloudflare handling on the
+> app side, not the source. Those fixes ship in Aidoku releases, so an update is usually the
+> whole answer and by far the quickest one.
+
+Most of these sites sit behind Cloudflare, so the first time you open one in a session its
+check can add a few seconds before covers appear. That much is normal.
+
+If a source is still stuck after updating:
+
+1. Open **Browse**, tap the source, then the **three dots → Settings**.
+2. Scroll down and tap **Clear Cache**.
+3. **Force close Aidoku** (swipe it away) and open it again.
+
+That drops the stale Cloudflare cookie and it loads again.
 
 ## Updates
 
