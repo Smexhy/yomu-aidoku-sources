@@ -33,7 +33,7 @@ Tap the button on iPhone or iPad and Aidoku adds the list. To add it by hand, op
 | <img src="assets/icons/kagane.png" width="20"> | **Kagane** <sub>[kagane.to](https://kagane.to)</sub> | 60+ languages | Mostly manhwa, with per-upload source badges |
 | <img src="assets/icons/mangaball.png" width="20"> | **Mangaball** <sub>[mangaball.net](https://mangaball.net)</sub> | 50+ languages | Wide language coverage |
 | <img src="assets/icons/mangadot.png" width="20"> | **MangaDotNet** <sub>[mangadot.net](https://mangadot.net)</sub> | English + others | One translation group per series, start to finish |
-| <img src="assets/icons/atsumaru.png" width="20"> | **Atsumaru** <sub>[atsu.moe](https://atsu.moe)</sub> | English | The quickest to open, with no handshake to sit through |
+| <img src="assets/icons/atsumaru.png" width="20"> | **Atsumaru** <sub>[atsu.moe](https://atsu.moe)</sub> | English | The quickest of the seven to open |
 | <img src="assets/icons/onisaga.png" width="20"> | **OniSaga** <sub>[onisaga.com](https://onisaga.com)</sub> | 18 languages | Filtering down to minimum rating, chapter count or scanlation group |
 | <img src="assets/icons/madaradex.png" width="20"> | **MadaraDex** <img alt="18+" src="https://img.shields.io/badge/18+-ff3b69?style=flat-square" align="top"> <sub>[madaradex.org](https://madaradex.org)</sub> | English | Mostly adult manhwa, with some safe-for-work titles |
 
@@ -63,7 +63,7 @@ English manga and webtoons. Home has Most Recent Popular, Latest Updates, Most F
 - **Content rating.** Safe, Suggestive, Erotica and Pornographic, applied across home, listings and search. Defaults to Safe and Suggestive.
 - **Content hiding.** Any type, demographic, genre, format or tag, plus Custom Hidden Tags for anything not in the list.
 - **Chapter selection.** Official uploads first, then a preferred scanlation group carried across the series, with gaps filled from the next best. Or pick the best upload per chapter instead.
-- **Scrambled pages, handled.** Comix signs its API with a module it rotates often and ships page images with the tiles shuffled. Yomu keeps up and chapters open normally.
+- **Scrambled pages.** Comix signs its API with a module it rotates often and ships page images with the tiles shuffled. Yomu keeps up and chapters open normally.
 
 <details>
 <summary><strong>More about Comix</strong></summary>
@@ -162,7 +162,7 @@ English manga, manhwa and manhua. Home has Trending, Recently Updated, Popular, 
 - **Content hiding.** Types, genres or tags, and adult content on or off. You can still pick an adult rating for a single search.
 - **Deduplication.** On by default. You choose whether merged chapters keep the newest upload or the one with the most pages.
 - **Chapter groups.** Each chapter shows the group that uploaded it.
-- **Nothing to wait for.** Atsumaru's data is public, so Yomu reads straight from the site and page images are direct links. That makes it the quickest here to warm up.
+- **Straight from the site.** Atsumaru's data is public, so Yomu reads straight from the site and page images are direct links. That makes it the quickest here to warm up.
 
 <h3><img src="assets/icons/onisaga.png" width="24" align="top">&nbsp; OniSaga</h3>
 
