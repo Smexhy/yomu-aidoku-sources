@@ -27,15 +27,15 @@ Tap the button on iPhone or iPad and Aidoku adds the list. To add it by hand, op
 
 ## The seven sources
 
-| | Source | Reads | Good for |
-|---|---|---|---|
-| <img src="assets/icons/comix.png" width="20"> | **Comix** <sub>[comix.to](https://comix.to)</sub> | English | The all-rounder: manga and manhwa together, and the biggest library here |
-| <img src="assets/icons/kagane.png" width="20"> | **Kagane** <sub>[kagane.to](https://kagane.to)</sub> | 60+ languages | Mostly manhwa, with per-upload source badges |
-| <img src="assets/icons/mangaball.png" width="20"> | **Mangaball** <sub>[mangaball.net](https://mangaball.net)</sub> | 50+ languages | Wide language coverage |
-| <img src="assets/icons/mangadot.png" width="20"> | **MangaDotNet** <sub>[mangadot.net](https://mangadot.net)</sub> | English + others | One translation group per series, start to finish |
-| <img src="assets/icons/atsumaru.png" width="20"> | **Atsumaru** <sub>[atsu.moe](https://atsu.moe)</sub> | English | The quickest of the seven to open |
-| <img src="assets/icons/onisaga.png" width="20"> | **OniSaga** <sub>[onisaga.com](https://onisaga.com)</sub> | 18 languages | Filtering down to minimum rating, chapter count or scanlation group |
-| <img src="assets/icons/madaradex.png" width="20"> | **MadaraDex** <img alt="18+" src="https://img.shields.io/badge/18+-ff3b69?style=flat-square" align="top"> <sub>[madaradex.org](https://madaradex.org)</sub> | English | Mostly adult manhwa, with some safe-for-work titles |
+| Source | Reads | Good for |
+|---|---|---|
+| <img src="assets/icons/comix.png" width="22" align="top"> **Comix** <sub>[comix.to](https://comix.to)</sub> | English | The all-rounder, and the biggest library here |
+| <img src="assets/icons/kagane.png" width="22" align="top"> **Kagane** <sub>[kagane.to](https://kagane.to)</sub> | 60+ languages | Mostly manhwa, with per-upload source badges |
+| <img src="assets/icons/mangaball.png" width="22" align="top"> **Mangaball** <sub>[mangaball.net](https://mangaball.net)</sub> | 50+ languages | Wide language coverage |
+| <img src="assets/icons/mangadot.png" width="22" align="top"> **MangaDotNet** <sub>[mangadot.net](https://mangadot.net)</sub> | Mostly English | One translation group per series |
+| <img src="assets/icons/atsumaru.png" width="22" align="top"> **Atsumaru** <sub>[atsu.moe](https://atsu.moe)</sub> | English | The quickest of the seven to open |
+| <img src="assets/icons/onisaga.png" width="22" align="top"> **OniSaga** <sub>[onisaga.com](https://onisaga.com)</sub> | 18 languages | Filters for rating, chapter count and group |
+| <img src="assets/icons/madaradex.png" width="22" align="top"> **MadaraDex** <img alt="18+" src="https://img.shields.io/badge/18+-ff3b69?style=flat-square" align="top"> <sub>[madaradex.org](https://madaradex.org)</sub> | English | Mostly adult manhwa, some safe for work |
 
 Multi-language sources default to English; pick yours in each source's settings.
 
