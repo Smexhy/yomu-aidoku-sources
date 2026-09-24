@@ -4,9 +4,9 @@
     {
       "id": "en.atsumaru",
       "name": "Atsumaru",
-      "version": 10,
-      "iconURL": "icons/en.atsumaru-v10.png",
-      "downloadURL": "sources/en.atsumaru-v10.aix",
+      "version": 11,
+      "iconURL": "icons/en.atsumaru-v11.png",
+      "downloadURL": "sources/en.atsumaru-v11.aix",
       "languages": [
         "en"
       ],
