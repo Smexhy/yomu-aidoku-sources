@@ -31,7 +31,7 @@ Tap the button on iPhone or iPad and Aidoku adds the list. To add it by hand, op
 |---|---|---|
 | <img src="assets/icons/comix.png" width="22" align="top"> **Comix** <sub>[comix.to](https://comix.to)</sub> | English | The all-rounder, and the biggest library here |
 | <img src="assets/icons/kagane.png" width="22" align="top"> **Kagane** <sub>[kagane.to](https://kagane.to)</sub> | 60+ languages | Mostly manhwa, with per-upload source badges |
-| <img src="assets/icons/mangaball.png" width="22" align="top"> **Mangaball** <sub>[mangaball.net](https://mangaball.net)</sub> | 50+ languages | Wide language coverage |
+| <img src="assets/icons/mangaball.png" width="22" align="top"> **Mangaball** <sub>[mangaball.com](https://mangaball.com)</sub> | 50+ languages | Wide language coverage and detailed filters |
 | <img src="assets/icons/mangadot.png" width="22" align="top"> **MangaDotNet** <sub>[mangadot.net](https://mangadot.net)</sub> | Mostly English | One translation group per series |
 | <img src="assets/icons/atsumaru.png" width="22" align="top"> **Atsumaru** <sub>[atsu.moe](https://atsu.moe)</sub> | English | The quickest of the seven to open |
 | <img src="assets/icons/onisaga.png" width="22" align="top"> **OniSaga** <sub>[onisaga.com](https://onisaga.com)</sub> | 18 languages | Filters for rating, chapter count and group |
@@ -113,19 +113,26 @@ Manhwa, manga and manhua, mostly manhwa. Home has Popular, Recently Added and Re
 
 <h3><img src="assets/icons/mangaball.png" width="24" align="top">&nbsp; Mangaball</h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangaball/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; 50+ languages &nbsp;·&nbsp; <a href="https://mangaball.net">mangaball.net</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangaball/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; 50+ languages &nbsp;·&nbsp; <a href="https://mangaball.com">mangaball.com</a></sub>
 
-Manga, manhwa and manhua. Home has Featured, Latest Updates, Recommended and Most Popular.
+Manga, manhwa and manhua. Home has Featured, Latest Updates, Recommended, Most Popular, Recently Added and Top Rated.
 
-- **Filters.** Genres and tags as separate include or exclude lists sharing one AND or OR match, plus demographic, status, type, author and sort.
-- **Content hiding.** Types, genres or tags. Adult content is off by default.
-- **Over fifty languages.** Spanish, Portuguese, Indonesian, Vietnamese, French and more.
+- **Filters.** Live genres and tags as separate include or exclude lists with Any or All matching, plus demographic, status, type and author. Sort by update date, added date, title, views or rating.
+- **Content hiding.** Hide types, genres or tags across home, listings and search. Adult content is off by default, with an extra check for titles the site flags incorrectly.
+- **Over fifty languages.** Spanish, Portuguese, Indonesian, Vietnamese, French and more. Pick any combination and chapter lists follow your choice.
 - **Deduplication.** On by default: official first, then most likes, then most views, then newest.
+- **Reader layout.** Long Strip titles open in the vertical Webtoon reader automatically.
 
 <details>
 <summary><strong>More about Mangaball</strong></summary>
 
-<p><strong>Session first.</strong> Mangaball only answers inside a live session, so Yomu picks up a session and token before it can search or load, refreshing them as they expire every couple of minutes. That handshake is why it warms up a moment slower than the plain-API sources.</p>
+<p><strong>Current API.</strong> Mangaball's rebuilt site now provides a public JSON API, so there is no session or token warmup. Home rows load together, while a title's details and chapters are requested together.</p>
+
+<p><strong>Reliable images.</strong> If an imported cover mirror disappears, Yomu uses the stored copy shown by Mangaball itself. Reader pages use the site's protected image storage directly and allow more time for slow images.</p>
+
+<p><strong>Quick reopening.</strong> Reopening the most recent series within a minute reuses its chapter list instead of downloading the same list again.</p>
+
+<p><strong>Specific errors.</strong> A real Cloudflare challenge is reported separately from an HTTP failure or an API response the source no longer understands.</p>
 
 </details>
 

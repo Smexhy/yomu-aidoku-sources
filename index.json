@@ -170,9 +170,9 @@
     {
       "id": "multi.mangaball",
       "name": "Mangaball",
-      "version": 11,
-      "iconURL": "icons/multi.mangaball-v11.png",
-      "downloadURL": "sources/multi.mangaball-v11.aix",
+      "version": 12,
+      "iconURL": "icons/multi.mangaball-v12.png",
+      "downloadURL": "sources/multi.mangaball-v12.aix",
       "languages": [
         "en",
         "ar",
@@ -232,7 +232,7 @@
         "zh-Hant"
       ],
       "contentRating": 1,
-      "baseURL": "https://mangaball.net",
+      "baseURL": "https://mangaball.com",
       "minAppVersion": "0.8.3"
     },
     {
