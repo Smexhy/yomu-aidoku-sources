@@ -72,7 +72,7 @@ English manga and webtoons. Home has Most Recent Popular, Latest Updates, Most F
 
 <p><strong>Comix's own captcha.</strong> Comix sometimes gates the whole site, including the data Yomu reads. Aidoku cannot show that check by itself, so <code>Settings &gt; Access &gt; Verify Captcha</code> opens it. A solve lasts about half an hour and the button re-arms when it runs out. If that friction is too much, the other sources are unaffected.</p>
 
-<p><strong>Bad page images.</strong> When the server returns corrupt data that would show blank, Yomu refetches a clean copy.</p>
+<p><strong>Page loading.</strong> Page requests follow the website's current image-host requirements. When the server returns corrupt data that would show blank, Yomu refetches a clean copy.</p>
 
 <p><strong>Tidy chapter names.</strong> Upload names that only repeat the chapter number are hidden; real titles stay.</p>
 
