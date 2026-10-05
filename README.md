@@ -68,11 +68,11 @@ English manga and webtoons. Home has Most Recent Popular, Latest Updates, Most F
 <details>
 <summary><strong>More about Comix</strong></summary>
 
-<p><strong>Blocked requests.</strong> On some devices Cloudflare refuses Aidoku's normal requests even after you pass its check, leaving the source unable to load. Yomu notices, routes through a web view instead, and returns to normal once the block lifts. <code>Settings &gt; Connection</code> can pin either mode.</p>
+<p><strong>Automatic connection.</strong> Normal requests are preferred. If Cloudflare blocks the API, Yomu switches only after the web view successfully loads it, and checks the signed API again before returning to normal. Covers choose their connection separately for each host, so a blocked cover cannot switch the whole source. <code>Settings &gt; Connection</code> can pin either mode.</p>
 
 <p><strong>Comix's own captcha.</strong> Comix sometimes gates the whole site, including the data Yomu reads. Aidoku cannot show that check by itself, so <code>Settings &gt; Access &gt; Verify Captcha</code> opens it. A solve lasts about half an hour and the button re-arms when it runs out. If that friction is too much, the other sources are unaffected.</p>
 
-<p><strong>Page loading.</strong> Page requests follow the website's current image-host requirements. When the server returns corrupt data that would show blank, Yomu refetches a clean copy.</p>
+<p><strong>Page loading.</strong> Ordinary pages use normal requests to each page's assigned image host. If a page fails, Yomu makes one short recovery attempt using a host supplied by the chapter, and remembers a working alternative for that page. Repeated failures pause source recovery briefly so they do not hold up the next pages.</p>
 
 <p><strong>Tidy chapter names.</strong> Upload names that only repeat the chapter number are hidden; real titles stay.</p>
 
