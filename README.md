@@ -68,6 +68,8 @@ English manga and webtoons. Home has Most Recent Popular, Latest Updates, Most F
 <details>
 <summary><strong>More about Comix</strong></summary>
 
+<p><strong>Title and chapter data.</strong> Chapter lists, descriptions and publication statuses support Comix's updated responses. Older cached title details are refreshed, and responses that remain encrypted trigger decoder recovery instead of being saved as empty metadata.</p>
+
 <p><strong>Automatic connection.</strong> Normal requests are preferred. If Cloudflare blocks the API, Yomu switches only after the web view successfully loads it, and checks the signed API again before returning to normal. Covers choose their connection separately for each host, so a blocked cover cannot switch the whole source. <code>Settings &gt; Connection</code> can pin either mode.</p>
 
 <p><strong>Comix's own captcha.</strong> Comix sometimes gates the whole site, including the data Yomu reads. Aidoku cannot show that check by itself, so <code>Settings &gt; Access &gt; Verify Captcha</code> opens it. A solve lasts about half an hour and the button re-arms when it runs out. If that friction is too much, the other sources are unaffected.</p>
