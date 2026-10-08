@@ -68,13 +68,13 @@ English manga and webtoons. Home has Most Recent Popular, Latest Updates, Most F
 <details>
 <summary><strong>More about Comix</strong></summary>
 
-<p><strong>Title and chapter data.</strong> Chapter lists, descriptions and publication statuses support Comix's updated responses. Older cached title details are refreshed, and responses that remain encrypted trigger decoder recovery instead of being saved as empty metadata. If Comix rejects an API signature, Yomu refreshes its signer and retries once.</p>
+<p><strong>Title and chapter data.</strong> Chapter lists, descriptions and publication statuses support Comix's updated responses. Older cached title details are refreshed, and responses that remain encrypted trigger decoder recovery instead of being saved as empty metadata. Retired signing keys are refreshed automatically with one retry. For an unfamiliar authentication error, Yomu checks whether Comix's signing setup changed before attempting the same recovery.</p>
 
 <p><strong>Automatic connection.</strong> Normal requests are preferred. If Cloudflare blocks the API, Yomu switches only after the web view successfully loads it, and checks the signed API again before returning to normal. Covers choose their connection separately for each host, so a blocked cover cannot switch the whole source. <code>Settings &gt; Connection</code> can pin either mode.</p>
 
 <p><strong>Comix's own captcha.</strong> Comix sometimes gates the whole site, including the data Yomu reads. Aidoku cannot show that check by itself, so <code>Settings &gt; Access &gt; Verify Captcha</code> opens it. A solve lasts about half an hour and the button re-arms when it runs out. If that friction is too much, the other sources are unaffected.</p>
 
-<p><strong>Page loading.</strong> Ordinary pages use normal requests to each page's assigned image host. If a page fails, Yomu makes one short recovery attempt using a host supplied by the chapter, and remembers a working alternative for that page. Repeated failures pause source recovery briefly so they do not hold up the next pages.</p>
+<p><strong>Page loading.</strong> Both current chapter image lists with full URLs and older lists with a shared base URL are supported. Ordinary pages use normal requests to each page's assigned image host. If a page fails, Yomu makes one short recovery attempt using a host supplied by the chapter, and remembers a working alternative for that page. Repeated failures pause source recovery briefly so they do not hold up the next pages. An incompatible chapter format reports that a source update may be needed.</p>
 
 <p><strong>Tidy chapter names.</strong> Upload names that only repeat the chapter number are hidden; real titles stay.</p>
 
