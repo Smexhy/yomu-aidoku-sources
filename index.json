@@ -17,9 +17,9 @@
     {
       "id": "en.comix",
       "name": "Comix",
-      "version": 131,
-      "iconURL": "icons/en.comix-v131.png",
-      "downloadURL": "sources/en.comix-v131.aix",
+      "version": 132,
+      "iconURL": "icons/en.comix-v132.png",
+      "downloadURL": "sources/en.comix-v132.aix",
       "languages": [
         "en"
       ],
