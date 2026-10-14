@@ -29,8 +29,8 @@ Tap the button on iPhone or iPad and Aidoku adds the list. To add it by hand, op
 
 | Source | Reads | Good for |
 |---|---|---|
-| <img src="assets/icons/comix.png" width="22" align="top"> **Comix** <sub>[comix.to](https://comix.to)</sub> | English | The all-rounder, and the biggest library here |
-| <img src="assets/icons/kagane.png" width="22" align="top"> **Kagane** <sub>[kagane.to](https://kagane.to)</sub> | 60+ languages | Mostly manhwa, with per-upload source badges |
+| <img src="assets/icons/comix.png" width="22" align="top"> **Comix** <sub>[comix.to](https://comix.to)</sub> | English | The biggest library here, but chapters are behind Comix's captcha for now (see below) |
+| <img src="assets/icons/kagane.png" width="22" align="top"> **Kagane** <sub>[kagane.org](https://kagane.org)</sub> | 60+ languages | Mostly manhwa, with per-upload source badges |
 | <img src="assets/icons/mangaball.png" width="22" align="top"> **Mangaball** <sub>[mangaball.com](https://mangaball.com)</sub> | 50+ languages | Wide language coverage and detailed filters |
 | <img src="assets/icons/mangadot.png" width="22" align="top"> **MangaDotNet** <sub>[mangadot.net](https://mangadot.net)</sub> | Mostly English | One translation group per series |
 | <img src="assets/icons/atsumaru.png" width="22" align="top"> **Atsumaru** <sub>[atsu.moe](https://atsu.moe)</sub> | English | The quickest of the seven to open |
@@ -59,6 +59,8 @@ Each source below has an **Add to Aidoku** button that installs only that one an
 
 English manga and webtoons. Home has Most Recent Popular, Latest Updates, Most Followed New Comics and Recently Added, plus Trending Webtoon and Trending Manga ranked by views over three months.
 
+> **Heads-up (October 2026): Comix is hard to read in Aidoku right now.** Comix has put a Cloudflare Turnstile check in front of chapter lists and chapters, and the check itself asks readers to use the website or its web app instead of third-party apps. In a browser the check passes invisibly and you never see it. A check solved inside Aidoku lasts only a few seconds, so Comix asks again almost every time you open something. Home, search and title details still load; chapter lists and chapters are what it gates. Yomu tries to renew the check in the background and sends you to Verify Captcha when that fails, but no source can make it last. Until Comix eases off, comix.to in Safari, or its web app (Share, then Add to Home Screen), is the reliable way to read it. The other six sources are unaffected.
+
 - **Filters.** Genres, demographic, format, type, status, content rating, release year, minimum chapters, author, artist and sort. Genres and formats include or exclude, with AND or OR matching.
 - **Content rating.** Safe, Suggestive, Erotica and Pornographic, applied across home, listings and search. Defaults to Safe and Suggestive.
 - **Content hiding.** Any type, demographic, genre, format or tag, plus Custom Hidden Tags for anything not in the list.
@@ -72,7 +74,9 @@ English manga and webtoons. Home has Most Recent Popular, Latest Updates, Most F
 
 <p><strong>Automatic connection.</strong> Normal requests are preferred. If Cloudflare blocks the API, Yomu switches only after the web view successfully loads it, and checks the signed API again before returning to normal. Covers choose their connection separately for each host, so a blocked cover cannot switch the whole source. <code>Settings &gt; Connection</code> can pin either mode.</p>
 
-<p><strong>Comix's own captcha.</strong> Comix sometimes gates the whole site, including the data Yomu reads. Aidoku cannot show that check by itself, so <code>Settings &gt; Access &gt; Verify Captcha</code> opens it. A solve lasts about half an hour and the button re-arms when it runs out. The first time after updating, the check may close before you solve it; open a chapter, then verify again. If that friction is too much, the other sources are unaffected.</p>
+<p><strong>Comix's own captcha.</strong> Aidoku cannot show Comix's check by itself, so <code>Settings &gt; Access &gt; Verify Captcha</code> opens it, and the button re-arms whenever Comix asks again. After a solve, Yomu keeps the pass inside its web view together with the cookies it was issued with, because Comix refuses a pass sent alongside different ones. When the pass runs out, Yomu loads Comix's check in the background the way the website does and retries once; if Comix wants a real tap instead, you get the Verify Captcha message. In October 2026 a solve inside Aidoku lasted only 10 to 15 seconds, which is why the heads-up above exists.</p>
+
+<p><strong>Fewer requests.</strong> Home cards no longer look up each title's genres and authors by default, which saved about 40 requests per session. Turn it back on under <code>Settings &gt; Content &gt; Home Card Details</code>.</p>
 
 <p><strong>Page loading.</strong> Both current chapter image lists with full URLs and older lists with a shared base URL are supported. Ordinary pages use normal requests to each page's assigned image host. If a page fails, Yomu makes one short recovery attempt using a host supplied by the chapter, and remembers a working alternative for that page. This follows whichever image hosts a chapter uses, since Comix rotates them. Repeated failures pause source recovery briefly so they do not hold up the next pages, and a refused request pauses it longer instead of repeating a request the host already rejected. An incompatible chapter format reports that a source update may be needed.</p>
 
@@ -86,7 +90,7 @@ English manga and webtoons. Home has Most Recent Popular, Latest Updates, Most F
 
 <h3><img src="assets/icons/kagane.png" width="24" align="top">&nbsp; Kagane</h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; 60+ languages &nbsp;·&nbsp; <a href="https://kagane.to">kagane.to</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; 60+ languages &nbsp;·&nbsp; <a href="https://kagane.org">kagane.org</a></sub>
 
 Manhwa, manga and manhua, mostly manhwa. Home has Popular, Recently Added and Recently Updated.
 
