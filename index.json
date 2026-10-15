@@ -96,9 +96,9 @@
     {
       "id": "multi.kagane",
       "name": "Kagane",
-      "version": 24,
-      "iconURL": "icons/multi.kagane-v24.png",
-      "downloadURL": "sources/multi.kagane-v24.aix",
+      "version": 25,
+      "iconURL": "icons/multi.kagane-v25.png",
+      "downloadURL": "sources/multi.kagane-v25.aix",
       "languages": [
         "en",
         "ja",
