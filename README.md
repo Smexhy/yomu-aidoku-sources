@@ -29,7 +29,7 @@ Tap the button on iPhone or iPad and Aidoku adds the list. To add it by hand, op
 
 | Source | Reads | Good for |
 |---|---|---|
-| <img src="assets/icons/comix.png" width="22" align="top"> **Comix** <sub>[comix.to](https://comix.to)</sub> | English | The biggest library here, but chapters are behind Comix's captcha for now (see below) |
+| <img src="assets/icons/comix.png" width="22" align="top"> **Comix** <sub>[comix.to](https://comix.to)</sub> | English | The biggest library here, but chapter lists and chapters load slowly behind Comix's checks (see below) |
 | <img src="assets/icons/kagane.png" width="22" align="top"> **Kagane** <sub>[kagane.org](https://kagane.org)</sub> | 60+ languages | Mostly manhwa, with per-upload source badges |
 | <img src="assets/icons/mangaball.png" width="22" align="top"> **Mangaball** <sub>[mangaball.com](https://mangaball.com)</sub> | 50+ languages | Wide language coverage and detailed filters |
 | <img src="assets/icons/mangadot.png" width="22" align="top"> **MangaDotNet** <sub>[mangadot.net](https://mangadot.net)</sub> | Mostly English | One translation group per series |
@@ -59,7 +59,9 @@ Each source below has an **Add to Aidoku** button that installs only that one an
 
 English manga and webtoons. Home has Most Recent Popular, Latest Updates, Most Followed New Comics and Recently Added, plus Trending Webtoon and Trending Manga ranked by views over three months.
 
-> **Heads-up (October 2026): Comix is hard to read in Aidoku right now.** Comix has put a Cloudflare Turnstile check in front of chapter lists and chapters, and the check itself asks readers to use the website or its web app instead of third-party apps. In a browser the check passes invisibly and you never see it. A check solved inside Aidoku lasts only a few seconds, so Comix asks again almost every time you open something. Home, search and title details still load; chapter lists and chapters are what it gates. Yomu tries to renew the check in the background and sends you to Verify Captcha when that fails, but no source can make it last. Until Comix eases off, comix.to in Safari, or its web app (Share, then Add to Home Screen), is the reliable way to read it. The other six sources are unaffected.
+> **Heads-up (October 2026): Comix works, but slowly, and that is on Comix.** Comix still puts a Cloudflare check in front of chapter lists and chapters, and the check even tells you to use their website or web app instead of an app like this one. Right now Aidoku usually clears it on its own in the background, no popup, nothing to tap, but each clear takes a few seconds, so chapter lists and chapters open noticeably slower than on the other sources. It is hit and miss: when the background clear fails, Yomu sends you to Verify Captcha. Home, search and title details are not affected.
+>
+> Let's be clear about what this check protects. Comix does not own a single page it serves. Every chapter is someone else's work, rehosted, and the wall exists to herd you onto their own ad-stuffed site instead of letting you read it anywhere else. That site is close to unusable without an ad blocker, so if you do end up reading on comix.to, use one. The other six sources are unaffected.
 
 - **Filters.** Genres, demographic, format, type, status, content rating, release year, minimum chapters, author, artist and sort. Genres and formats include or exclude, with AND or OR matching.
 - **Content rating.** Safe, Suggestive, Erotica and Pornographic, applied across home, listings and search. Defaults to Safe and Suggestive.
