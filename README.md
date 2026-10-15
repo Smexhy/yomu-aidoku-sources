@@ -191,7 +191,9 @@ Manga, manhwa and manhua. Home opens with an auto-scrolling Most Popular slider,
 <details>
 <summary><strong>More about OniSaga</strong></summary>
 
-<p><strong>Page-by-page unlocking.</strong> OniSaga hands out no direct image links. Each page is unlocked through the site's own reader with a rolling token, one at a time, the same way the site does it, so pages arrive as you reach them.</p>
+<p><strong>Signed page links.</strong> OniSaga's reader hands out short-lived signed links for each page, and Yomu loads those directly. A link that has expired by the time you reach its page is renewed through the site's own reader API, one page at a time, the same way the site does it.</p>
+
+<p><strong>Chapters still importing.</strong> Some newer group uploads have no pages on OniSaga yet; the site itself shows "Loading pages" for them. Yomu says so instead of failing silently. Try again later or open another version of the chapter.</p>
 
 </details>
 
