@@ -179,6 +179,7 @@ English manga, manhwa and manhua. Home has Trending, Recently Updated, Popular, 
 - **Content hiding.** Types, genres or tags, and adult content on or off. You can still pick an adult rating for a single search.
 - **Deduplication.** On by default. You choose whether merged chapters keep the newest upload or the one with the most pages.
 - **Chapter groups.** Each chapter shows the group that uploaded it.
+- **Comics only.** atsu.moe also hosts text novels, which have no pages for Aidoku to show, so they are left out of home, search and author pages.
 - **Straight from the site.** Atsumaru's data is public, so Yomu reads straight from the site and page images are direct links. That makes it the quickest here to warm up.
 
 <h3><img src="assets/icons/onisaga.png" width="24" align="top">&nbsp; OniSaga</h3>
