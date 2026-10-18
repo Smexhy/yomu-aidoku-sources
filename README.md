@@ -59,15 +59,17 @@ Each source below has an **Add to Aidoku** button that installs only that one an
 
 English manga and webtoons. Home has Most Recent Popular, Latest Updates, Most Followed New Comics and Recently Added, plus Trending Webtoon and Trending Manga ranked by views over three months.
 
-> **Heads-up (October 2026): Comix works, but slowly, and that is on Comix.** Comix still puts a Cloudflare check in front of chapter lists and chapters, and the check even tells you to use their website or web app instead of an app like this one. Right now Aidoku usually clears it on its own in the background, no popup, nothing to tap, but each clear takes a few seconds, so chapter lists and chapters open noticeably slower than on the other sources. It is hit and miss: when the background clear fails, Yomu sends you to Verify Captcha. Home, search and title details are not affected.
+> **Comix deliberately blocks third-party readers. Passing Cloudflare does not mean the chapter list will work.** Comix has a separate block that explicitly says “Third-party apps are not supported.” It can refuse chapter lists and reading requests after the site has loaded successfully, and an affected session can lose access to the homepage too. This is Comix choosing to shut out reader apps, and readers get stuck dealing with the fallout.
 >
-> Let's be clear about what this check protects. Comix does not own a single page it serves. Every chapter is someone else's work, rehosted, and the wall exists to herd you onto their own ad-stuffed site instead of letting you read it anywhere else. That site is close to unusable without an ad blocker, so if you do end up reading on comix.to, use one. The other six sources are unaffected.
+> Yomu now works around more of that mess: it renews verification when possible, saves chapter-list progress, reuses completed histories, and automatically tries declared image fallbacks when a page download fails. That still means extra waiting, occasional verification prompts, paused loads that need a refresh, and pages that can still need Reload. **This is a fragile workaround, not permanent or guaranteed access.** Comix can change its checks, API or image hosts and break it again. No custom Aidoku app is required.
+>
+> **Deliberately breaking reader apps and making users jump through these hoops is user-hostile bullshit. Comix: 🖕 to that policy.** We will not pretend this is a dependable service or promise endless fixes for obstacles Comix keeps putting in the way. The other sources are unaffected by Comix's block.
 
 - **Filters.** Genres, demographic, format, type, status, content rating, release year, minimum chapters, author, artist and sort. Genres and formats include or exclude, with AND or OR matching.
 - **Content rating.** Safe, Suggestive, Erotica and Pornographic, applied across home, listings and search. Defaults to Safe and Suggestive.
 - **Content hiding.** Any type, demographic, genre, format or tag, plus Custom Hidden Tags for anything not in the list.
 - **Chapter selection.** Official uploads first, then a preferred scanlation group carried across the series, with gaps filled from the next best. Or pick the best upload per chapter instead.
-- **Scrambled pages.** Comix signs its API with a module it rotates often and ships page images with the tiles shuffled. Yomu keeps up and chapters open normally.
+- **Scrambled pages.** Protected pages use Comix's own renderer to undo tile scrambling. Signing and decoding changes are handled where supported; Comix's access checks can still prevent a chapter from opening.
 
 <details>
 <summary><strong>More about Comix</strong></summary>
@@ -76,19 +78,21 @@ English manga and webtoons. Home has Most Recent Popular, Latest Updates, Most F
 
 <p><strong>Automatic connection.</strong> Normal requests are preferred. If Cloudflare blocks the API, Yomu switches only after the web view successfully loads it, and checks the signed API again before returning to normal. Covers choose their connection separately for each host, so a blocked cover cannot switch the whole source. <code>Settings &gt; Connection</code> can pin either mode.</p>
 
-<p><strong>Comix's own captcha.</strong> Aidoku cannot show Comix's check by itself, so <code>Settings &gt; Access &gt; Verify Captcha</code> opens it, and the button re-arms whenever Comix asks again. After a solve, Yomu keeps the pass inside its web view together with the cookies it was issued with, because Comix refuses a pass sent alongside different ones. When the pass runs out, Yomu loads Comix's check in the background the way the website does and retries once; if Comix wants a real tap instead, you get the Verify Captcha message. In October 2026 a solve inside Aidoku lasted only 10 to 15 seconds, which is why the heads-up above exists.</p>
+<p><strong>Comix's own check.</strong> This is separate from Cloudflare. Yomu attempts background verification and one retry when Comix refuses a request, within a limited recovery allowance. If that fails or Comix requires interaction, use <code>Settings &gt; Access &gt; Verify Captcha</code>. A successful check does not guarantee how long Comix will accept the session. Repeated refusals stop the load rather than creating an endless verification loop.</p>
 
 <p><strong>Cloudflare in front of the whole site.</strong> Sometimes Comix turns on Cloudflare's "Just a moment..." check for every visitor, not just for chapters. When that happens, Yomu lets the check run inside its web view, where it usually passes without a tap. If Cloudflare wants a real tap, you get the Verify Captcha message instead of a misleading "site is down".</p>
 
 <p><strong>Fewer requests.</strong> Home cards no longer look up each title's genres and authors by default, which saved about 40 requests per session. Turn it back on under <code>Settings &gt; Content &gt; Home Card Details</code>.</p>
 
-<p><strong>Page loading.</strong> Both current chapter image lists with full URLs and older lists with a shared base URL are supported. Ordinary pages use normal requests to each page's assigned image host. If a page fails, Yomu makes one short recovery attempt using a host supplied by the chapter, and remembers a working alternative for that page. This follows whichever image hosts a chapter uses, since Comix rotates them. Repeated failures pause source recovery briefly so they do not hold up the next pages, and a refused request pauses it longer instead of repeating a request the host already rejected. An incompatible chapter format reports that a source update may be needed.</p>
+<p><strong>Page loading.</strong> Current full image URLs and older shared-base lists are supported. Healthy ordinary images load directly. If a download fails, Yomu can try up to two fallback locations explicitly supplied by that chapter and return the recovered image automatically. A fallback may use a different node as well as a different domain; a working location is remembered only for that page. Short deadlines, a shared recovery budget and refusal backoff limit waiting and repeated requests. Recovery briefly occupies the source, stops when it cannot finish, and may leave a manual Reload necessary. It cannot repair an unavailable image or guarantee that every CDN will work. An incompatible chapter format reports that a source update may be needed.</p>
+
+<p><strong>Long chapter lists.</strong> Completed histories are cached, and refreshes can reuse the unchanged older portion instead of downloading it all again. Slow or interrupted loads save a checkpoint. A timed pause reports how many uploads were loaded and the reported total; pull down to refresh to continue. A huge first load can still take time or need more than one attempt. Progress cannot replace Aidoku's own loading UI, so Retry can temporarily leave a misleading “No Chapters” label while work continues.</p>
 
 <p><strong>Tidy chapter names.</strong> Upload names that only repeat the chapter number are hidden; real titles stay.</p>
 
 <p><strong>Chapter sources.</strong> Each chapter shows its real source, with a check on licensed platforms like Tappytoon.</p>
 
-<p><strong>Already reading Comix elsewhere?</strong> This build shares the same source id with a high version number, so adding Yomu keeps your library and swaps the build in. Nothing saved is lost. <strong>Show One Upload Per Chapter</strong> is on by default, and the first update runs a one-time migration to carry your history across; on a large library that first open can sit on a spinner for a few minutes, which is normal. Turn the setting off to see every upload.</p>
+<p><strong>Already reading Comix elsewhere?</strong> Yomu uses the same source id, so compatible saved titles continue using it. <strong>Show One Upload Per Chapter</strong> is on by default; a one-time migration carries supported reading history to the deduplicated chapter ids. Turn the setting off to see every upload. If you installed a higher-numbered local test build, Aidoku will not automatically downgrade it to the public package: reinstall the Comix source from Yomu to return to public updates.</p>
 
 </details>
 
