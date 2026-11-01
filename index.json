@@ -96,9 +96,9 @@
     {
       "id": "multi.kagane",
       "name": "Kagane",
-      "version": 25,
-      "iconURL": "icons/multi.kagane-v25.png",
-      "downloadURL": "sources/multi.kagane-v25.aix",
+      "version": 26,
+      "iconURL": "icons/multi.kagane-v26.png",
+      "downloadURL": "sources/multi.kagane-v26.aix",
       "languages": [
         "en",
         "ja",
@@ -164,7 +164,7 @@
         "vi"
       ],
       "contentRating": 1,
-      "baseURL": "https://kagane.org",
+      "baseURL": "https://kagane.moe",
       "minAppVersion": "0.8.3"
     },
     {

@@ -30,7 +30,7 @@ Tap the button on iPhone or iPad and Aidoku adds the list. To add it by hand, op
 | Source | Reads | Good for |
 |---|---|---|
 | <img src="assets/icons/comix.png" width="22" align="top"> **Comix** <sub>[comix.to](https://comix.to)</sub> | English | The biggest library here, but chapter lists and chapters load slowly behind Comix's checks (see below) |
-| <img src="assets/icons/kagane.png" width="22" align="top"> **Kagane** <sub>[kagane.org](https://kagane.org)</sub> | 60+ languages | Mostly manhwa, with per-upload source badges |
+| <img src="assets/icons/kagane.png" width="22" align="top"> **Kagane** <sub>[kagane.moe](https://kagane.moe)</sub> | 60+ languages | Mostly manhwa, with per-upload source badges |
 | <img src="assets/icons/mangaball.png" width="22" align="top"> **Mangaball** <sub>[mangaball.com](https://mangaball.com)</sub> | 50+ languages | Wide language coverage and detailed filters |
 | <img src="assets/icons/mangadot.png" width="22" align="top"> **MangaDotNet** <sub>[mangadot.net](https://mangadot.net)</sub> | Mostly English | One translation group per series |
 | <img src="assets/icons/atsumaru.png" width="22" align="top"> **Atsumaru** <sub>[atsu.moe](https://atsu.moe)</sub> | English | The quickest of the seven to open |
@@ -98,7 +98,7 @@ English manga and webtoons. Home has Most Recent Popular, Latest Updates, Most F
 
 <h3><img src="assets/icons/kagane.png" width="24" align="top">&nbsp; Kagane</h3>
 
-<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; 60+ languages &nbsp;·&nbsp; <a href="https://kagane.org">kagane.org</a></sub>
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/kagane/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; 60+ languages &nbsp;·&nbsp; <a href="https://kagane.moe">kagane.moe</a></sub>
 
 Manhwa, manga and manhua, mostly manhwa. Home has Popular, Recently Added and Recently Updated.
 
@@ -107,6 +107,7 @@ Manhwa, manga and manhua, mostly manhwa. Home has Popular, Recently Added and Re
 - **Upload sources.** Every chapter shows where it came from, like Tapas or Omega Scans, with a check on official ones. Show all uploads, official only, or scanlations only.
 - **Spoiler tags.** Genres and tags Kagane marks as spoilers stay hidden unless you ask for them.
 - **Over sixty languages.** Korean, Japanese, Chinese, French, German, Spanish and more.
+- **Mirror fallback.** Remembers a working address and tries another mirror if it stops responding.
 
 <details>
 <summary><strong>More about Kagane</strong></summary>
