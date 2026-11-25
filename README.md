@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff3b69,100:7c5cff&height=180&section=header&text=%E3%82%88%E3%82%80%20Yomu&fontSize=62&fontColor=ffffff&fontAlignY=36&desc=Manga,%20manhwa%20and%20manhua%20for%20Aidoku&descSize=18&descAlignY=58" alt="Yomu: Manga, manhwa and manhua sources for Aidoku" width="100%">
 
 <img alt="Platform: iOS / iPadOS, Aidoku 0.8.3+" src="https://img.shields.io/badge/iOS%20%2F%20iPadOS-Aidoku%200.8.3%2B-ff3b69?style=for-the-badge">
-<img alt="Sources: 7" src="https://img.shields.io/badge/sources-7-7c5cff?style=for-the-badge">
+<img alt="Sources: 8" src="https://img.shields.io/badge/sources-8-7c5cff?style=for-the-badge">
 
 <img src="assets/spacer.png" width="100%" height="28" alt="">
 
@@ -23,9 +23,9 @@ Tap the button on iPhone or iPad and Aidoku adds the list. To add it by hand, op
 
 ## What this is
 
-[Aidoku](https://aidoku.app) is a free, open-source manga reader for iOS and iPadOS. Yomu is my own source list for it: seven sources I build and maintain for my own reading, kept public so anyone can use them. It is not the official Aidoku community list and is not trying to replace it. I update them when a site changes or something breaks.
+[Aidoku](https://aidoku.app) is a free, open-source manga reader for iOS and iPadOS. Yomu is my own source list for it: eight sources I build and maintain for my own reading, kept public so anyone can use them. It is not the official Aidoku community list and is not trying to replace it. I update them when a site changes or something breaks.
 
-## The seven sources
+## The eight sources
 
 | Source | Reads | Good for |
 |---|---|---|
@@ -33,9 +33,10 @@ Tap the button on iPhone or iPad and Aidoku adds the list. To add it by hand, op
 | <img src="assets/icons/kagane.png" width="22" align="top"> **Kagane** <sub>[kagane.moe](https://kagane.moe)</sub> | 60+ languages | Mostly manhwa, with per-upload source badges |
 | <img src="assets/icons/mangaball.png" width="22" align="top"> **Mangaball** <sub>[mangaball.com](https://mangaball.com)</sub> | 50+ languages | Wide language coverage and detailed filters |
 | <img src="assets/icons/mangadot.png" width="22" align="top"> **MangaDotNet** <sub>[mangadot.net](https://mangadot.net)</sub> | Mostly English | One translation group per series |
-| <img src="assets/icons/atsumaru.png" width="22" align="top"> **Atsumaru** <sub>[atsu.moe](https://atsu.moe)</sub> | English | The quickest of the seven to open |
+| <img src="assets/icons/atsumaru.png" width="22" align="top"> **Atsumaru** <sub>[atsu.moe](https://atsu.moe)</sub> | English | The quickest of the eight to open |
 | <img src="assets/icons/onisaga.png" width="22" align="top"> **OniSaga** <sub>[onisaga.com](https://onisaga.com)</sub> | 18 languages | Filters for rating, chapter count and group |
 | <img src="assets/icons/madaradex.png" width="22" align="top"> **MadaraDex** <img alt="18+" src="https://img.shields.io/badge/18+-ff3b69?style=flat-square" align="top"> <sub>[madaradex.org](https://madaradex.org)</sub> | English | Mostly adult manhwa, some safe for work |
+| <img src="assets/icons/mangadistrict.png" width="22" align="top"> **MangaDistrict** <img alt="18+" src="https://img.shields.io/badge/18+-ff3b69?style=flat-square" align="top"> <sub>[mangadistrict.com](https://mangadistrict.com)</sub> | English | Adult manhwa, uncensored and official releases |
 
 Multi-language sources default to English; pick yours in each source's settings.
 
@@ -47,7 +48,7 @@ Multi-language sources default to English; pick yours in each source's settings.
 - **Covers first.** Requests are batched and cached, and covers load before anything else.
 - **Tappable chips.** Genre chips on a series page open matching titles, and on most sources author and tag chips too. Paste a link and the right page opens.
 
-<sub>MadaraDex is the exception on hiding: it is a single-language source with no settings of its own, and Aidoku rates it adult as a whole.</sub>
+<sub>MadaraDex and MangaDistrict are the exceptions: both are single-language adult sources with no settings of its own, so there is nothing to hide or deduplicate, and Aidoku rates each adult as a whole. MangaDistrict's genre list is built into the source, matched to the site's full list when it was released.</sub>
 
 ## Install one at a time
 
@@ -225,6 +226,30 @@ Home has New Manga and Latest Updates, plus five browse listings: Most Popular, 
 <p><strong>Pages that load at all.</strong> MadaraDex serves its page images only to a real browser and refuses an app asking for them directly, which is why a straightforward source for it does not work. Yomu opens each chapter through the site's own reader first so the images become available, then loads them normally. From your side it is just a chapter that opens.</p>
 
 <p><strong>No settings of its own.</strong> It is single-language and rated adult as a whole, so there is nothing to configure.</p>
+
+</details>
+
+<h3><img src="assets/icons/mangadistrict.png" width="24" align="top">&nbsp; MangaDistrict &nbsp;<img alt="18+" src="https://img.shields.io/badge/18+-ff3b69?style=flat-square" align="top"></h3>
+
+<sub><a href="https://aidoku.app/add-source-list/?url=https://smexhy.github.io/yomu-aidoku-sources/mangadistrict/index.min.json"><b>Add to Aidoku</b></a> &nbsp;·&nbsp; English &nbsp;·&nbsp; <a href="https://mangadistrict.com">mangadistrict.com</a></sub>
+
+<strong>Adult.</strong> mangadistrict.com is an adult manhwa site, so the source is rated adult as a whole and Aidoku filters it with your other content settings.
+
+Home has New Releases, Latest Updates and Today's Trends, plus five browse listings: Latest Updates, Trending, Most Viewed, New Series and Top Rated.
+
+- **Every page loads.** The site loads most pages only as you scroll, and puts a blank stand-in where each page will go. A reader that takes those stand-ins at face value shows black pages or pages that never finish loading. Yomu reads the real image for every page, so a chapter opens complete.
+- **No promo banner.** The site puts its own "Where the best stories live" banner at the start of every chapter. Yomu leaves out that one image and nothing else, so credit and "To be continued" pages stay.
+- **Real covers.** Adult covers that the site hides behind a placeholder show properly.
+- **Filters.** Sort by relevance, latest, A to Z, rating, trending, most views or newest, plus the full genre list with any or all matching, status, adult content, author and artist.
+- **Tappable chips.** Genre and author on a series page open matching titles; other tags search by name.
+- **Series details.** Genres and tags, status, author, artist and upload dates.
+
+<details>
+<summary><strong>More about MangaDistrict</strong></summary>
+
+<p><strong>Alongside the community source.</strong> The Aidoku community list also has a MangaDistrict source. Yomu's uses its own id, so the two never replace each other on update and you can keep both installed. To move a title over, use Aidoku's Migrate; series and chapter links match, so it finds them directly. Older links in the site's previous <code>/title/</code> format still open.</p>
+
+<p><strong>Ready for layout changes.</strong> If the site renames its reader layout, Yomu still finds the chapter's pages from the page itself, and if the chapter list moves off the series page it loads it the way the site's theme does.</p>
 
 </details>
 

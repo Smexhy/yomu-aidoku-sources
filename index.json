@@ -41,6 +41,19 @@
       "minAppVersion": "0.8.3"
     },
     {
+      "id": "en.mangadistrictyomu",
+      "name": "MangaDistrict",
+      "version": 1,
+      "iconURL": "icons/en.mangadistrictyomu-v1.png",
+      "downloadURL": "sources/en.mangadistrictyomu-v1.aix",
+      "languages": [
+        "en"
+      ],
+      "contentRating": 2,
+      "baseURL": "https://mangadistrict.com",
+      "minAppVersion": "0.7.1"
+    },
+    {
       "id": "en.mangadot",
       "name": "MangaDotNet",
       "version": 20,

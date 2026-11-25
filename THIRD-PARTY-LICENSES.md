@@ -27,6 +27,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+## Aidoku Community sources
+
+MadaraDex includes the Madara template and MangaDistrict is adapted from the
+MangaDistrict source, both from the Aidoku Community sources project
+(https://github.com/Aidoku-Community/sources), released under the MIT or Apache-2.0
+licenses. MangaDistrict was modified to read lazy-loaded page and cover images, to leave
+out the site's promo banner, and to use its own source id.
+
 ## Other components
 
 The packages also bundle widely used Rust libraries, such as serde, which are
