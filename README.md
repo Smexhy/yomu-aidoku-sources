@@ -52,7 +52,7 @@ Multi-language sources default to English; pick yours in each source's settings.
 - **Covers first.** Requests are batched and cached, and covers load before anything else.
 - **Tappable chips.** Genre chips on a series page open matching titles, and on most sources author and tag chips too. Paste a link and the right page opens.
 
-<sub>MadaraDex and MangaDistrict are the exceptions: both are single-language adult sources with no settings of its own, so there is nothing to hide or deduplicate, and Aidoku rates each adult as a whole. ManhwaH and HiperDex are adult sources too, so they show every rating until you narrow it in their settings. MangaDistrict, BaeToon, ManhwaH and HiperDex have their genre lists built into the source, matched to each site's full list when it was released.</sub>
+<sub>MangaDistrict is the exception: a single-language adult source with no settings of its own, so there is nothing to hide or deduplicate, and Aidoku rates it adult as a whole. MadaraDex, ManhwaH and HiperDex are adult sources too, so they show adult titles until you narrow that in their settings. MadaraDex, MangaDistrict, BaeToon, ManhwaH and HiperDex have their genre lists built into the source, matched to each site's full list when it was released.</sub>
 
 ## Install one at a time
 
@@ -252,6 +252,7 @@ English manhwa, manga and manhua gathered from many scanlation sites. Home has t
 Home opens with a Popular This Week slider, then Popular Today, Latest Updates, New on MadaraDex, Popular This Month, All-Time Popular and genre shortcuts, plus eight browse listings.
 
 - **Filters.** Eleven sorts (popular today, this week or this month, latest, newest, oldest, rating, views and more), type, status, adult content (exclude, only, or uncensored only), minimum rating, genres to include or exclude with all or any matching, author and artist.
+- **Content hiding.** Hide any genre, or turn on Hide Adult Titles to keep only the titles the site marks safe for work. MadaraDex leaves them out itself, so they stay out of home, every listing and search. A genre you pick in a search still shows.
 - **Tappable chips.** Genre, author and artist on a series page each open matching titles.
 - **The next chapter is already waiting.** While you read, the following chapter loads in the background, so tapping through a series is close to instant.
 
@@ -261,8 +262,6 @@ Home opens with a Popular This Week slider, then Popular Today, Latest Updates, 
 <p><strong>Pages that load at all.</strong> MadaraDex serves its page images only to a real browser and refuses an app asking for them directly, which is why a straightforward source for it does not work. Yomu passes the site's image check itself, starting as soon as you open a series, then loads the pages normally. From your side it is just a chapter that opens.</p>
 
 <p><strong>Rebuilt for the new site.</strong> MadaraDex moved to its own theme in November 2026, with a new home, a new title index and chapter lists split into pages. Yomu reads all of it, and your saved series keep working.</p>
-
-<p><strong>No settings of its own.</strong> It is single-language and rated adult as a whole, so there is nothing to configure.</p>
 
 </details>
 
