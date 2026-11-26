@@ -4,9 +4,9 @@
     {
       "id": "en.atsumaru",
       "name": "Atsumaru",
-      "version": 12,
-      "iconURL": "icons/en.atsumaru-v12.png",
-      "downloadURL": "sources/en.atsumaru-v12.aix",
+      "version": 13,
+      "iconURL": "icons/en.atsumaru-v13.png",
+      "downloadURL": "sources/en.atsumaru-v13.aix",
       "languages": [
         "en"
       ],
@@ -15,11 +15,24 @@
       "minAppVersion": "0.8.3"
     },
     {
+      "id": "en.baetoon",
+      "name": "BaeToon",
+      "version": 1,
+      "iconURL": "icons/en.baetoon-v1.png",
+      "downloadURL": "sources/en.baetoon-v1.aix",
+      "languages": [
+        "en"
+      ],
+      "contentRating": 1,
+      "baseURL": "https://baetoon.com",
+      "minAppVersion": "0.8.3"
+    },
+    {
       "id": "en.comix",
       "name": "Comix",
-      "version": 139,
-      "iconURL": "icons/en.comix-v139.png",
-      "downloadURL": "sources/en.comix-v139.aix",
+      "version": 140,
+      "iconURL": "icons/en.comix-v140.png",
+      "downloadURL": "sources/en.comix-v140.aix",
       "languages": [
         "en"
       ],
@@ -28,11 +41,25 @@
       "minAppVersion": "0.8.4"
     },
     {
+      "id": "en.hiperdex",
+      "name": "HiperDex",
+      "version": 1,
+      "iconURL": "icons/en.hiperdex-v1.png",
+      "downloadURL": "sources/en.hiperdex-v1.aix",
+      "languages": [
+        "en",
+        "pt-BR"
+      ],
+      "contentRating": 2,
+      "baseURL": "https://hiperdex.com",
+      "minAppVersion": "0.7.1"
+    },
+    {
       "id": "en.madaradex",
       "name": "MadaraDex",
-      "version": 1,
-      "iconURL": "icons/en.madaradex-v1.png",
-      "downloadURL": "sources/en.madaradex-v1.aix",
+      "version": 2,
+      "iconURL": "icons/en.madaradex-v2.png",
+      "downloadURL": "sources/en.madaradex-v2.aix",
       "languages": [
         "en"
       ],
@@ -43,9 +70,9 @@
     {
       "id": "en.mangadistrictyomu",
       "name": "MangaDistrict",
-      "version": 1,
-      "iconURL": "icons/en.mangadistrictyomu-v1.png",
-      "downloadURL": "sources/en.mangadistrictyomu-v1.aix",
+      "version": 2,
+      "iconURL": "icons/en.mangadistrictyomu-v2.png",
+      "downloadURL": "sources/en.mangadistrictyomu-v2.aix",
       "languages": [
         "en"
       ],
@@ -56,9 +83,9 @@
     {
       "id": "en.mangadot",
       "name": "MangaDotNet",
-      "version": 20,
-      "iconURL": "icons/en.mangadot-v20.png",
-      "downloadURL": "sources/en.mangadot-v20.aix",
+      "version": 21,
+      "iconURL": "icons/en.mangadot-v21.png",
+      "downloadURL": "sources/en.mangadot-v21.aix",
       "languages": [
         "en",
         "ar",
@@ -107,11 +134,24 @@
       "minAppVersion": "0.8.3"
     },
     {
+      "id": "en.manhwah",
+      "name": "ManhwaH",
+      "version": 1,
+      "iconURL": "icons/en.manhwah-v1.png",
+      "downloadURL": "sources/en.manhwah-v1.aix",
+      "languages": [
+        "en"
+      ],
+      "contentRating": 2,
+      "baseURL": "https://manhwah.com",
+      "minAppVersion": "0.8.3"
+    },
+    {
       "id": "multi.kagane",
       "name": "Kagane",
-      "version": 26,
-      "iconURL": "icons/multi.kagane-v26.png",
-      "downloadURL": "sources/multi.kagane-v26.aix",
+      "version": 27,
+      "iconURL": "icons/multi.kagane-v27.png",
+      "downloadURL": "sources/multi.kagane-v27.aix",
       "languages": [
         "en",
         "ja",
@@ -183,9 +223,9 @@
     {
       "id": "multi.mangaball",
       "name": "Mangaball",
-      "version": 12,
-      "iconURL": "icons/multi.mangaball-v12.png",
-      "downloadURL": "sources/multi.mangaball-v12.aix",
+      "version": 13,
+      "iconURL": "icons/multi.mangaball-v13.png",
+      "downloadURL": "sources/multi.mangaball-v13.aix",
       "languages": [
         "en",
         "ar",
@@ -249,11 +289,30 @@
       "minAppVersion": "0.8.3"
     },
     {
+      "id": "multi.mangafireyomu",
+      "name": "MangaFire",
+      "version": 1,
+      "iconURL": "icons/multi.mangafireyomu-v1.png",
+      "downloadURL": "sources/multi.mangafireyomu-v1.aix",
+      "languages": [
+        "en",
+        "es",
+        "es-419",
+        "fr",
+        "ja",
+        "pt",
+        "pt-BR"
+      ],
+      "contentRating": 1,
+      "baseURL": "https://mangafire.to",
+      "minAppVersion": "0.8.3"
+    },
+    {
       "id": "multi.onisaga",
       "name": "OniSaga",
-      "version": 12,
-      "iconURL": "icons/multi.onisaga-v12.png",
-      "downloadURL": "sources/multi.onisaga-v12.aix",
+      "version": 13,
+      "iconURL": "icons/multi.onisaga-v13.png",
+      "downloadURL": "sources/multi.onisaga-v13.aix",
       "languages": [
         "en",
         "ja",
@@ -261,6 +320,7 @@
         "es-419",
         "es",
         "pt-BR",
+        "pt",
         "de",
         "it",
         "ru",
@@ -272,7 +332,12 @@
         "th",
         "zh",
         "zh-Hant",
-        "ko"
+        "ko",
+        "uk",
+        "bg",
+        "hu",
+        "fa",
+        "bn"
       ],
       "contentRating": 1,
       "baseURL": "https://onisaga.com",

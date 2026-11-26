@@ -29,11 +29,12 @@ SOFTWARE.
 
 ## Aidoku Community sources
 
-MadaraDex includes the Madara template and MangaDistrict is adapted from the
-MangaDistrict source, both from the Aidoku Community sources project
-(https://github.com/Aidoku-Community/sources), released under the MIT or Apache-2.0
-licenses. MangaDistrict was modified to read lazy-loaded page and cover images, to leave
-out the site's promo banner, and to use its own source id.
+MangaDistrict is adapted from the MangaDistrict source, and MangaFire's request
+signing tables are converted from the MangaFire source, both from the Aidoku Community
+sources project (https://github.com/Aidoku-Community/sources), released under the MIT or
+Apache-2.0 licenses. MangaDistrict was modified to read lazy-loaded page and cover images,
+to leave out the site's promo banner, and to use its own source id. MangaFire was written
+anew around those tables and uses its own source id.
 
 ## Other components
 
