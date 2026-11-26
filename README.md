@@ -29,7 +29,7 @@ Tap the button on iPhone or iPad and Aidoku adds the list. To add it by hand, op
 
 | Source | Reads | Good for |
 |---|---|---|
-| <img src="assets/icons/comix.png" width="22" align="top"> **Comix** <sub>[comix.to](https://comix.to)</sub> | English | The biggest library here, but chapter lists and chapters load slowly behind Comix's checks (see below) |
+| <img src="assets/icons/comix.png" width="22" align="top"> **Comix** <sub>[comix.to](https://comix.to)</sub> | English | The biggest library here |
 | <img src="assets/icons/kagane.png" width="22" align="top"> **Kagane** <sub>[kagane.moe](https://kagane.moe)</sub> | 60+ languages | Mostly manhwa, with per-upload source badges |
 | <img src="assets/icons/mangaball.png" width="22" align="top"> **Mangaball** <sub>[mangaball.com](https://mangaball.com)</sub> | 50+ languages | Wide language coverage and detailed filters |
 | <img src="assets/icons/mangadot.png" width="22" align="top"> **MangaDotNet** <sub>[mangadot.net](https://mangadot.net)</sub> | Mostly English | One translation group per series |
@@ -64,17 +64,11 @@ Each source below has an **Add to Aidoku** button that installs only that one an
 
 English manga and webtoons. Home has Most Recent Popular, Latest Updates, Most Followed New Comics and Recently Added, plus Trending Webtoon and Trending Manga ranked by views over three months.
 
-> **Comix deliberately blocks third-party readers. Passing Cloudflare does not mean the chapter list will work.** Comix has a separate block that explicitly says “Third-party apps are not supported.” It can refuse chapter lists and reading requests after the site has loaded successfully, and an affected session can lose access to the homepage too. This is Comix choosing to shut out reader apps, and readers get stuck dealing with the fallout.
->
-> Yomu now works around more of that mess: it renews verification when possible, saves chapter-list progress, reuses completed histories, and automatically tries declared image fallbacks when a page download fails. That still means extra waiting, occasional verification prompts, paused loads that need a refresh, and pages that can still need Reload. **This is a fragile workaround, not permanent or guaranteed access.** Comix can change its checks, API or image hosts and break it again. No custom Aidoku app is required.
->
-> **Deliberately breaking reader apps and making users jump through these hoops is user-hostile bullshit. Comix: 🖕 to that policy.** We will not pretend this is a dependable service or promise endless fixes for obstacles Comix keeps putting in the way. The other sources are unaffected by Comix's block.
-
 - **Filters.** Genres, demographic, format, type, status, content rating, release year, minimum chapters, author, artist and sort. Genres and formats include or exclude, with AND or OR matching.
 - **Content rating.** Safe, Suggestive, Erotica and Pornographic, applied across home, listings and search. Defaults to Safe and Suggestive.
 - **Content hiding.** Any type, demographic, genre, format or tag, plus Custom Hidden Tags for anything not in the list.
 - **Chapter selection.** Official uploads first, then a preferred scanlation group carried across the series, with gaps filled from the next best. Or pick the best upload per chapter instead.
-- **Scrambled pages.** Protected pages use Comix's own renderer to undo tile scrambling. Signing and decoding changes are handled where supported; Comix's access checks can still prevent a chapter from opening.
+- **Scrambled pages.** Protected pages use Comix's own renderer to undo tile scrambling. Signing and decoding changes are handled where supported.
 
 <details>
 <summary><strong>More about Comix</strong></summary>
@@ -82,10 +76,6 @@ English manga and webtoons. Home has Most Recent Popular, Latest Updates, Most F
 <p><strong>Title and chapter data.</strong> Chapter lists, descriptions and publication statuses support Comix's updated responses. Older cached title details are refreshed, and responses that remain encrypted trigger decoder recovery instead of being saved as empty metadata. When Comix rotates its signing key during a site update, Yomu fetches the new signing setup again past any caches, remembers the retired key so it is not reused, and briefly waits out a rollout still in progress. Poster links in the newer site-relative format are resolved too. For an unfamiliar authentication error, Yomu checks whether Comix's signing setup changed before attempting the same recovery. Yomu also handles the current move of Comix's signing helpers and common script rearrangements. A different signing protocol can still need a source update.</p>
 
 <p><strong>Automatic connection.</strong> Normal requests are preferred. If Cloudflare blocks the API, Yomu switches only after the web view successfully loads it, and checks the signed API again before returning to normal. Covers choose their connection separately for each host, so a blocked cover cannot switch the whole source. <code>Settings &gt; Connection</code> can pin either mode. If its browser session stops responding, Yomu recreates that session and retries once, keeping cookies and saved chapter progress. A repeated failure stops with an error instead of reusing the same failed session on every refresh.</p>
-
-<p><strong>Comix's own check.</strong> This is separate from Cloudflare. Yomu attempts background verification and one retry when Comix refuses a request, within a limited recovery allowance. If that fails or Comix requires interaction, use <code>Settings &gt; Access &gt; Verify Captcha</code>. A successful check does not guarantee how long Comix will accept the session. Repeated refusals stop the load rather than creating an endless verification loop.</p>
-
-<p><strong>Cloudflare in front of the whole site.</strong> Sometimes Comix turns on Cloudflare's "Just a moment..." check for every visitor, not just for chapters. When that happens, Yomu lets the check run inside its web view, where it usually passes without a tap. If Cloudflare wants a real tap, you get the Verify Captcha message instead of a misleading "site is down".</p>
 
 <p><strong>Fewer requests.</strong> Home cards no longer look up each title's genres and authors by default, which saved about 40 requests per session. Turn it back on under <code>Settings &gt; Content &gt; Home Card Details</code>.</p>
 
